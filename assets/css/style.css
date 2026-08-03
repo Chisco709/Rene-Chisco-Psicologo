@@ -72,8 +72,7 @@
   header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;}
   .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-size:19px;text-decoration:none;color:var(--ink);}
   .brand-mark{
-    width:34px;height:34px;border-radius:50%;
-    background:conic-gradient(var(--wheel-1) 0 51.4deg,var(--wheel-2) 0 102.8deg,var(--wheel-3) 0 154.2deg,var(--wheel-4) 0 205.6deg,var(--wheel-5) 0 257deg,var(--wheel-6) 0 308.4deg,var(--wheel-7) 0 360deg);
+    height:40px;width:auto;
     flex:none;
   }
   nav.mainnav{display:flex;gap:28px;font-size:14.5px;}
