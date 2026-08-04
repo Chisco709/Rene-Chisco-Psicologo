@@ -1,19 +1,19 @@
 :root{
-    --ink:#1c2b24;
-    --paper:#f2eee2;
-    --card:#faf8f1;
-    --moss:#3f5a4d;
-    --moss-deep:#2a4038;
-    --ochre:#b8863e;
-    --clay:#a6503b;
-    --line: rgba(28,43,36,.14);
-    --wheel-1:#3f5a4d; /* felicidad */
-    --wheel-2:#b8863e; /* sistema de exito */
-    --wheel-3:#a6503b; /* historia/crecimiento */
-    --wheel-4:#2a4038; /* mentalidad */
-    --wheel-5:#c79a52; /* oratoria */
-    --wheel-6:#6f8a72; /* proposito */
-    --wheel-7:#8a4a3a; /* resiliencia */
+    --ink:#081a33;
+    --paper:#ffffff;
+    --card:#eef6fb;
+    --moss:#044BD9;
+    --moss-deep:#03379e;
+    --ochre:#049DD9;
+    --clay:#04D9C4;
+    --line: rgba(4,75,217,.14);
+    --wheel-1:#044BD9;
+    --wheel-2:#0468BF;
+    --wheel-3:#049DD9;
+    --wheel-4:#04D9C4;
+    --wheel-5:#03379e;
+    --wheel-6:#03b6a3;
+    --wheel-7:#1f6fe0;
     --radius: 18px;
   }
   *{box-sizing:border-box;}
