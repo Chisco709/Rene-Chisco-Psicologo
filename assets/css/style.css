@@ -1,22 +1,21 @@
 :root{
-    --ink:#101418;
-    --paper:#ffffff;
-    --card:#f3f6fa;
-    --moss:#1d63d6;
-    --moss-deep:#123f99;
-    --ochre:#0ea5c9;
-    --clay:#0284a8;
-    --line: rgba(16,20,24,.12);
-    --wheel-1:#1d63d6;
-    --wheel-2:#0ea5c9;
-    --wheel-3:#123f99;
-    --wheel-4:#38bdf8;
-    --wheel-5:#0369a1;
-    --wheel-6:#2dd4ee;
-    --wheel-7:#1e40af;
+    --ink:#1c2b24;
+    --paper:#f2eee2;
+    --card:#faf8f1;
+    --moss:#3f5a4d;
+    --moss-deep:#2a4038;
+    --ochre:#b8863e;
+    --clay:#a6503b;
+    --line: rgba(28,43,36,.14);
+    --wheel-1:#3f5a4d; /* felicidad */
+    --wheel-2:#b8863e; /* sistema de exito */
+    --wheel-3:#a6503b; /* historia/crecimiento */
+    --wheel-4:#2a4038; /* mentalidad */
+    --wheel-5:#c79a52; /* oratoria */
+    --wheel-6:#6f8a72; /* proposito */
+    --wheel-7:#8a4a3a; /* resiliencia */
     --radius: 18px;
   }
-  
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
@@ -72,7 +71,8 @@
   header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;}
   .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-size:19px;text-decoration:none;color:var(--ink);}
   .brand-mark{
-    height:40px;width:auto;
+    width:34px;height:34px;border-radius:50%;
+    background:conic-gradient(var(--wheel-1) 0 51.4deg,var(--wheel-2) 0 102.8deg,var(--wheel-3) 0 154.2deg,var(--wheel-4) 0 205.6deg,var(--wheel-5) 0 257deg,var(--wheel-6) 0 308.4deg,var(--wheel-7) 0 360deg);
     flex:none;
   }
   nav.mainnav{display:flex;gap:28px;font-size:14.5px;}
@@ -304,8 +304,6 @@ nav.mainnav a.active{opacity:1;font-weight:600;}
 .page-hero h1{text-align:center;font-size:clamp(30px,4.5vw,48px);}
 .page-hero p{text-align:center;max-width:60ch;margin:14px auto 0;color:#3a4941;font-size:16.5px;}
 .breadcrumb{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#5a6a61;text-align:center;margin-top:14px;}
-.breadcrumb a{text-decoration:none;border-bottom:1px solid var(--line);}
-
 .breadcrumb a{text-decoration:none;border-bottom:1px solid var(--line);}
 
 /* ===== WHATSAPP FLOTANTE (todas las páginas) ===== */
