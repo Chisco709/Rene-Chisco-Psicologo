@@ -366,3 +366,37 @@ nav.mainnav a.active{opacity:1;font-weight:600;}
 }
 .reassure-quote span{display:block;font-family:'IBM Plex Mono',monospace;font-style:normal;font-size:11px;
   color:var(--moss);margin-top:14px;letter-spacing:.05em;text-transform:uppercase;}
+
+/* ===== RETOS ACORDEÓN ===== */
+.reto-card{cursor:pointer;}
+.reto-card .reto-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;}
+.reto-card .chevron{transition:transform .3s ease;flex:none;color:#8a988e;margin-top:2px;}
+.reto-card.open .chevron{transform:rotate(45deg);}
+.reto-detail{
+  max-height:0;overflow:hidden;transition:max-height .4s ease;
+}
+.reto-card.open .reto-detail{max-height:2400px;}
+.reto-detail-inner{padding-top:18px;margin-top:14px;border-top:1px solid rgba(255,255,255,.14);}
+.reto-detail-inner .rd-quote{
+  font-family:'Fraunces',serif;font-style:italic;color:#fff;font-size:16px;line-height:1.5;
+  border-left:2px solid var(--ochre);padding-left:16px;margin:0 0 16px;
+}
+.reto-detail-inner p{color:#c3cec5;font-size:14px;line-height:1.65;margin:0 0 12px;}
+.reto-detail-inner h4{color:#fff;font-size:13px;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;margin:20px 0 10px;}
+.reto-sessions{list-style:none;margin:0;padding:0;display:grid;gap:10px;}
+.reto-sessions li{
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;
+  padding:12px 14px;font-size:13.5px;color:#c3cec5;
+}
+.reto-sessions li b{color:#fff;display:block;font-size:13px;margin-bottom:3px;}
+.reto-price-box{
+  display:flex;gap:20px;flex-wrap:wrap;margin-top:16px;padding:16px;background:rgba(255,255,255,.05);
+  border-radius:12px;
+}
+.reto-price-box div b{display:block;font-family:'Fraunces',serif;font-size:19px;color:#fff;}
+.reto-price-box div span{font-family:'IBM Plex Mono',monospace;font-size:10px;color:#8a988e;text-transform:uppercase;}
+.reto-cta{
+  display:inline-flex;align-items:center;gap:8px;margin-top:18px;background:var(--ochre);color:#1c2b24;
+  font-weight:700;padding:12px 22px;border-radius:100px;text-decoration:none;font-size:13.5px;
+}
+.reto-pending{font-size:13px;color:#8a988e;font-style:italic;}
