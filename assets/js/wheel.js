@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!svg) return;
 
   const dims = [
-    {label:"Felicidad", hex:"#3f5a4d"},
-    {label:"Sistema de Éxito", hex:"#b8863e"},
-    {label:"Crecimiento", hex:"#a6503b"},
-    {label:"Mentalidad", hex:"#2a4038"},
-    {label:"Comunicación", hex:"#c79a52"},
-    {label:"Propósito", hex:"#6f8a72"},
-    {label:"Resiliencia", hex:"#8a4a3a"}
+    {label:"Felicidad", hex:"#044BD9"},
+    {label:"Sistema de Éxito", hex:"#0468BF"},
+    {label:"Crecimiento", hex:"#049DD9"},
+    {label:"Mentalidad", hex:"#04D9C4"},
+    {label:"Comunicación", hex:"#03379e"},
+    {label:"Propósito", hex:"#03b6a3"},
+    {label:"Resiliencia", hex:"#1f6fe0"}
   ];
 
   const cx = 150, cy = 150, rOuter = 148, rInner = 62;
