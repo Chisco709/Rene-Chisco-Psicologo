@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Blog · Artículos sobre psicología y coaching · René Chisco</title>
 <meta name="description" content="Artículos sobre psicología, coaching, bienestar emocional y crecimiento personal, escritos por René Fernando Chisco Ríos.">
-<link rel="canonical" href="https://www.psrenechisco.com/blog.html">
+<link rel="canonical" href="https://www.renefernandochisco.com/blog.html">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#1c2b24">
 <link rel="icon" type="image/jpeg" href="assets/img/imagen-logo.jpg">
@@ -13,18 +13,173 @@
 <meta property="og:site_name" content="René Fernando Chisco Ríos · Psicólogo">
 <meta property="og:title" content="Blog · Artículos sobre psicología y coaching · René Chisco">
 <meta property="og:description" content="Artículos sobre psicología, coaching, bienestar emocional y crecimiento personal.">
-<meta property="og:url" content="https://www.psrenechisco.com/blog.html">
+<meta property="og:url" content="https://www.renefernandochisco.com/blog.html">
 <meta property="og:locale" content="es_CO">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,450&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- CSS embebido: mismas variables, colores y componentes de assets/css/style.css -->
+<style>
+:root{
+    --ink:#081a33;
+    --paper:#ffffff;
+    --card:#eef6fb;
+    --moss:#044BD9;
+    --moss-deep:#03379e;
+    --ochre:#049DD9;
+    --clay:#04D9C4;
+    --line: rgba(4,75,217,.14);
+    --wheel-1:#044BD9;
+    --wheel-2:#0468BF;
+    --wheel-3:#049DD9;
+    --wheel-4:#04D9C4;
+    --wheel-5:#03379e;
+    --wheel-6:#03b6a3;
+    --wheel-7:#1f6fe0;
+    --radius: 18px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Karla',sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces',serif;
+    font-weight:450;
+    margin:0 0 .4em 0;
+    letter-spacing:-.01em;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12.5px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--moss);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--clay);display:inline-block;}
+  section{padding:96px 0;}
+  @media(max-width:720px){section{padding:64px 0;}}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'Karla',sans-serif;font-weight:600;font-size:15px;
+    padding:14px 26px;border-radius:100px;
+    text-decoration:none;border:1px solid transparent;
+    transition:transform .2s ease, background .2s ease;
+  }
+  .btn-solid{background:var(--ink);color:var(--paper);}
+  .btn-solid:hover{transform:translateY(-2px);background:var(--moss-deep);}
+  .btn-line{border-color:var(--ink);color:var(--ink);}
+  .btn-line:hover{transform:translateY(-2px);background:var(--ink);color:var(--paper);}
+
+  /* HEADER */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(242,238,226,.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-size:19px;text-decoration:none;color:var(--ink);}
+  .brand-mark{
+    width:34px;height:34px;border-radius:50%;
+    background:conic-gradient(var(--wheel-1) 0 51.4deg,var(--wheel-2) 0 102.8deg,var(--wheel-3) 0 154.2deg,var(--wheel-4) 0 205.6deg,var(--wheel-5) 0 257deg,var(--wheel-6) 0 308.4deg,var(--wheel-7) 0 360deg);
+    flex:none;
+  }
+  nav.mainnav{display:flex;gap:28px;font-size:14.5px;}
+  nav.mainnav a{text-decoration:none;opacity:.78;}
+  nav.mainnav a:hover{opacity:1;}
+  nav.mainnav a.active{opacity:1;font-weight:600;}
+  header .btn{padding:10px 20px;font-size:13.5px;}
+  .navtoggle{display:none;background:none;border:none;font-family:'Fraunces',serif;font-size:15px;cursor:pointer;color:var(--ink);}
+  @media(max-width:880px){
+    nav.mainnav{
+      display:none;position:absolute;top:100%;left:0;right:0;
+      background:var(--paper);border-bottom:1px solid var(--line);
+      flex-direction:column;gap:0;padding:8px 0;
+    }
+    nav.mainnav.open{display:flex;}
+    nav.mainnav a{padding:14px 28px;border-top:1px solid var(--line);}
+    nav.mainnav a:first-child{border-top:none;}
+    header .btn{display:none;}
+    .navtoggle{display:block;}
+  }
+
+  /* PAGE HERO */
+  .page-hero{padding-top:56px;padding-bottom:24px;}
+  .page-hero .eyebrow{justify-content:center;}
+  .page-hero h1{text-align:center;font-size:clamp(30px,4.5vw,48px);}
+  .page-hero p{text-align:center;max-width:60ch;margin:14px auto 0;color:#3a4941;font-size:16.5px;}
+  .breadcrumb{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#5a6a61;text-align:center;margin-top:14px;}
+  .breadcrumb a{text-decoration:none;border-bottom:1px solid var(--line);}
+
+  /* BLOG GRID */
+  .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:8px;}
+  @media(max-width:960px){.blog-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:620px){.blog-grid{grid-template-columns:1fr;}}
+  .blog-card{
+    display:flex;flex-direction:column;text-decoration:none;color:var(--ink);
+    border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+    background:var(--paper);transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .blog-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(4,75,217,.12);}
+  .blog-card .cover{
+    aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;
+  }
+  .blog-card .cover svg{width:40px;height:40px;}
+  .blog-card .body{padding:22px;display:flex;flex-direction:column;gap:8px;flex:1;}
+  .blog-card .cat{
+    font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;
+    letter-spacing:.06em;color:var(--moss);
+  }
+  .blog-card h3{font-size:18.5px;line-height:1.25;margin:0;}
+  .blog-card p{font-size:14px;color:#5a6a61;margin:0;flex:1;}
+  .blog-card .meta{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8a988e;margin-top:6px;}
+  .blog-card.soon{cursor:default;opacity:.72;}
+  .blog-card.soon:hover{transform:none;box-shadow:none;}
+
+  /* CTA BAND */
+  .cta-band{background:var(--ink);color:#fff;text-align:center;}
+  .cta-band h2{color:#fff;font-size:clamp(28px,4vw,42px);max-width:20ch;margin:0 auto 18px;}
+  .cta-band .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;}
+
+  footer{padding:36px 0;border-top:1px solid var(--line);}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:#5a6a61;flex-wrap:wrap;gap:10px;}
+
+  /* WHATSAPP FLOTANTE */
+  .whatsapp-float{
+    position:fixed;right:22px;bottom:22px;z-index:999;
+    width:58px;height:58px;border-radius:50%;
+    background:#25D366;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 24px rgba(37,211,102,.45);
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .whatsapp-float:hover{transform:scale(1.08);box-shadow:0 10px 28px rgba(37,211,102,.6);}
+  @media(max-width:600px){.whatsapp-float{width:52px;height:52px;right:16px;bottom:16px;}}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{transition:none !important;}
+  }
+</style>
 </head>
 <body>
 <header>
   <div class="wrap">
     <a class="brand" href="index.html"><img src="assets/img/imagen-logo.jpg" alt="René Fernando Chisco Ríos - Psicología & Coaching" class="brand-mark"></a>
-    <nav class="mainnav">
+    <nav class="mainnav" id="mainnav">
       <a href="index.html">Inicio</a>
       <a href="sobre-mi.html">Sobre mí</a>
       <a href="especialidades.html">Especialidades</a>
@@ -35,7 +190,7 @@
       <a href="multimedia.html">Multimedia</a>
       <a href="contacto.html">Contacto</a>
     </nav>
-    <button class="navtoggle" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+    <button class="navtoggle" id="navtoggle" aria-label="Abrir menú" aria-expanded="false">Menú</button>
     <a class="btn btn-solid" href="contacto.html">Agenda tu sesión</a>
   </div>
 </header>
@@ -149,9 +304,29 @@
   </div>
 </footer>
 
-<script src="assets/js/nav.js"></script>
 <a class="whatsapp-float" href="https://wa.me/573117472236?text=Hola%20Ren%C3%A9%2C%20quiero%20agendar%20una%20consulta" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
   <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16 2.9C8.8 2.9 2.9 8.8 2.9 16c0 2.5.7 4.9 2 7L3 29l6.2-1.9c2 .1 4 1.7 6.8 1.7 7.2 0 13.1-5.9 13.1-13.1S23.2 2.9 16 2.9zm0 23.8c-2.4 0-4.6-.7-6.5-1.9l-.5-.3-4.6 1.4 1.5-4.4-.3-.5c-1.3-2-2-4.3-2-6.7C3.6 9.2 9.2 3.6 16 3.6S28.4 9.2 28.4 16 22.8 26.7 16 26.7zm7.1-9.2c-.4-.2-2.3-1.1-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.3-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7-.1-.2-.9-2.2-1.3-3-.3-.8-.7-.7-.9-.7h-.8c-.3 0-.7.1-1 .5-.4.4-1.4 1.3-1.4 3.3s1.4 3.8 1.6 4.1c.2.3 2.8 4.3 6.9 6 4.1 1.7 4.1 1.1 4.8 1.1.7 0 2.3-.9 2.6-1.9.3-.9.3-1.7.2-1.9-.1-.2-.4-.3-.8-.5z"/></svg>
 </a>
+
+<!-- JavaScript embebido: toggle del menú móvil -->
+<script>
+(function(){
+  var toggle = document.getElementById('navtoggle');
+  var nav = document.getElementById('mainnav');
+  if(!toggle || !nav) return;
+
+  toggle.addEventListener('click', function(){
+    var isOpen = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  nav.querySelectorAll('a').forEach(function(link){
+    link.addEventListener('click', function(){
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
 </body>
 </html>
