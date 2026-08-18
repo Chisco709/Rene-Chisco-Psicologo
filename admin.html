@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panel de administración · René Chisco</title>
+<meta name="robots" content="noindex, nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,450&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#081a33; --paper:#ffffff; --card:#eef6fb;
+    --moss:#044BD9; --moss-deep:#03379e; --clay:#04D9C4;
+    --line: rgba(4,75,217,.14); --radius:16px;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--card);color:var(--ink);font-family:'Karla',sans-serif;line-height:1.5;padding:32px 16px 80px;}
+  h1,h2{font-family:'Fraunces',serif;font-weight:500;margin:0 0 .3em;}
+  .wrap{max-width:820px;margin:0 auto;}
+  .panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:22px;}
+  label{display:block;font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--moss);margin:16px 0 6px;}
+  label:first-child{margin-top:0;}
+  input[type=text], input[type=password], textarea, select{
+    width:100%;padding:11px 14px;border:1px solid var(--line);border-radius:10px;
+    font-family:'Karla',sans-serif;font-size:14.5px;color:var(--ink);background:#fbfdff;
+  }
+  textarea{min-height:70px;resize:vertical;}
+  .article-card{border:1px solid var(--line);border-radius:12px;padding:20px;margin-top:16px;position:relative;background:#fbfdff;}
+  .article-card .row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  @media(max-width:600px){.article-card .row{grid-template-columns:1fr;}}
+  .article-card .top{display:flex;justify-content:space-between;align-items:center;}
+  .article-card .top b{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#5a6a61;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14.5px;
+    padding:12px 22px;border-radius:100px;border:none;cursor:pointer;text-decoration:none;
+  }
+  .btn-solid{background:var(--ink);color:#fff;}
+  .btn-solid:hover{background:var(--moss-deep);}
+  .btn-danger{background:#fff;color:#c0392b;border:1px solid #f0c4c0;font-size:12.5px;padding:8px 14px;}
+  .btn-line{background:transparent;color:var(--ink);border:1px solid var(--line);}
+  .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;align-items:center;}
+  .status{font-size:13.5px;padding:12px 16px;border-radius:10px;margin-top:14px;display:none;}
+  .status.ok{display:block;background:#e5f7ec;color:#1a7a44;}
+  .status.err{display:block;background:#fdeceb;color:#c0392b;}
+  #login{max-width:380px;margin:80px auto;text-align:center;}
+  #login input{margin-top:12px;}
+  #app{display:none;}
+  .hint{font-size:12px;color:#5a6a61;margin-top:4px;}
+</style>
+</head>
+<body>
+
+<div id="login" class="panel">
+  <h2>Panel de administración</h2>
+  <p style="font-size:14px;color:#5a6a61;">Ingresa tu contraseña para editar el contenido del sitio.</p>
+  <input type="password" id="passwordInput" placeholder="Contraseña">
+  <div class="actions" style="justify-content:center;">
+    <button class="btn btn-solid" onclick="login()">Entrar</button>
+  </div>
+  <p id="loginError" class="status err"></p>
+</div>
+
+<div id="app" class="wrap">
+  <h1>Editar el Blog</h1>
+  <p style="color:#5a6a61;">Cambia lo que necesites y presiona "Guardar cambios" al final. El sitio se actualizará solo en menos de un minuto.</p>
+
+  <div class="panel">
+    <h2 style="font-size:18px;">Encabezado de la sección</h2>
+    <label>Etiqueta pequeña (ej: "Blog")</label>
+    <input type="text" id="heroEyebrow">
+    <label>Título principal</label>
+    <input type="text" id="heroTitle">
+    <label>Descripción</label>
+    <textarea id="heroDescription"></textarea>
+  </div>
+
+  <div class="panel">
+    <h2 style="font-size:18px;">Artículos</h2>
+    <p class="hint">Marca "Publicado" para que el artículo sea visible y con enlace. Si no está publicado, se mostrará como "Muy pronto".</p>
+    <div id="articlesList"></div>
+    <div class="actions">
+      <button class="btn btn-line" type="button" onclick="addArticle()">+ Agregar artículo</button>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button class="btn btn-solid" onclick="saveContent()">Guardar cambios</button>
+    <span id="saveStatus" class="status"></span>
+  </div>
+</div>
+
+<script>
+  let sessionPassword = '';
+  let contentData = null;
+
+  function login(){
+    const pw = document.getElementById('passwordInput').value;
+    if(!pw){ return; }
+    sessionPassword = pw;
+    document.getElementById('login').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+    loadContent();
+  }
+
+  async function loadContent(){
+    try {
+      const res = await fetch('content.json', { cache: 'no-store' });
+      contentData = await res.json();
+      renderForm();
+    } catch(e){
+      alert('No se pudo cargar el contenido actual. Verifica que content.json exista en el sitio.');
+    }
+  }
+
+  function renderForm(){
+    const hero = contentData.blog.hero;
+    document.getElementById('heroEyebrow').value = hero.eyebrow || '';
+    document.getElementById('heroTitle').value = hero.title || '';
+    document.getElementById('heroDescription').value = hero.description || '';
+    renderArticles();
+  }
+
+  function renderArticles(){
+    const list = document.getElementById('articlesList');
+    list.innerHTML = '';
+    contentData.blog.articles.forEach((art, i) => {
+      const card = document.createElement('div');
+      card.className = 'article-card';
+      card.innerHTML = `
+        <div class="top">
+          <b>Artículo ${i + 1}</b>
+          <button class="btn btn-danger" type="button" onclick="removeArticle(${i})">Eliminar</button>
+        </div>
+        <label>Categoría</label>
+        <input type="text" data-idx="${i}" data-field="category" value="${escapeHtml(art.category)}">
+        <label>Título</label>
+        <input type="text" data-idx="${i}" data-field="title" value="${escapeHtml(art.title)}">
+        <label>Texto breve (extracto)</label>
+        <textarea data-idx="${i}" data-field="excerpt">${escapeHtml(art.excerpt)}</textarea>
+        <div class="row">
+          <div>
+            <label>Tiempo de lectura</label>
+            <input type="text" data-idx="${i}" data-field="readTime" value="${escapeHtml(art.readTime)}">
+          </div>
+          <div>
+            <label>Enlace del artículo (archivo .html, dejar vacío si aún no existe)</label>
+            <input type="text" data-idx="${i}" data-field="url" value="${escapeHtml(art.url)}">
+          </div>
+        </div>
+        <label>
+          <input type="checkbox" data-idx="${i}" data-field="published" ${art.published ? 'checked' : ''} style="width:auto;display:inline-block;margin-right:6px;">
+          Publicado (visible con enlace)
+        </label>
+      `;
+      list.appendChild(card);
+    });
+
+    list.querySelectorAll('input[type=text], textarea').forEach(el => {
+      el.addEventListener('input', (e) => {
+        const idx = e.target.dataset.idx;
+        const field = e.target.dataset.field;
+        contentData.blog.articles[idx][field] = e.target.value;
+      });
+    });
+    list.querySelectorAll('input[type=checkbox]').forEach(el => {
+      el.addEventListener('change', (e) => {
+        const idx = e.target.dataset.idx;
+        contentData.blog.articles[idx].published = e.target.checked;
+      });
+    });
+  }
+
+  function addArticle(){
+    contentData.blog.articles.push({
+      id: 'nuevo-articulo-' + Date.now(),
+      url: '',
+      category: 'General',
+      title: 'Nuevo artículo',
+      excerpt: 'Descripción breve...',
+      readTime: 'Muy pronto',
+      colorFrom: 'wheel-1',
+      colorTo: 'wheel-3',
+      icon: 'book',
+      published: false
+    });
+    renderArticles();
+  }
+
+  function removeArticle(i){
+    if(!confirm('¿Eliminar este artículo?')) return;
+    contentData.blog.articles.splice(i, 1);
+    renderArticles();
+  }
+
+  function escapeHtml(str){
+    return (str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  async function saveContent(){
+    contentData.blog.hero.eyebrow = document.getElementById('heroEyebrow').value;
+    contentData.blog.hero.title = document.getElementById('heroTitle').value;
+    contentData.blog.hero.description = document.getElementById('heroDescription').value;
+
+    const statusEl = document.getElementById('saveStatus');
+    statusEl.className = 'status';
+    statusEl.textContent = 'Guardando...';
+    statusEl.style.display = 'block';
+
+    try {
+      const res = await fetch('/api/save-content', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password: sessionPassword, content: contentData })
+      });
+      const data = await res.json();
+      if(res.ok){
+        statusEl.className = 'status ok';
+        statusEl.textContent = data.message || 'Guardado correctamente.';
+      } else {
+        statusEl.className = 'status err';
+        statusEl.textContent = data.error || 'Ocurrió un error al guardar.';
+      }
+    } catch(e){
+      statusEl.className = 'status err';
+      statusEl.textContent = 'Error de conexión al guardar.';
+    }
+  }
+</script>
+</body>
+</html>
