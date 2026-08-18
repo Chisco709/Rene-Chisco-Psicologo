@@ -15,12 +15,6 @@
 <meta property="og:description" content="Tarifas de consulta psicológica, coaching personal, terapia de pareja y servicios empresariales.">
 <meta property="og:url" content="https://www.psrenechisco.com/precios.html">
 <meta property="og:locale" content="es_CO">
-<meta property="og:image" content="https://pixel-p1.s3.sa-east-1.amazonaws.com/doctor/avatar/7c1ca87c/7c1ca87c-d248-4aff-a4b4-27205d86d0ed_large.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Precios de consulta · René Chisco">
-<meta name="twitter:description" content="Tarifas de consulta psicológica, coaching personal, terapia de pareja y servicios empresariales.">
-<meta name="twitter:image" content="https://pixel-p1.s3.sa-east-1.amazonaws.com/doctor/avatar/7c1ca87c/7c1ca87c-d248-4aff-a4b4-27205d86d0ed_large.jpg">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,450&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -35,6 +29,7 @@
       <a href="sobre-mi.html">Sobre mí</a>
       <a href="especialidades.html">Especialidades</a>
       <a href="retos.html">Retos de 30 días</a>
+      <a href="blog.html">Blog</a>
       <a href="precios.html" class="active">Precios</a>
       <a href="opiniones.html">Opiniones</a>
       <a href="multimedia.html">Multimedia</a>
@@ -44,8 +39,8 @@
     <a class="btn btn-solid" href="contacto.html">Agenda tu sesión</a>
   </div>
 </header>
-<main>
 
+<main>
   <section class="page-hero">
     <div class="wrap">
       <p class="eyebrow">Inversión</p>
@@ -57,27 +52,12 @@
   <section style="padding-top:8px;">
     <div class="wrap">
       <p class="eyebrow">Atención personal</p>
-      <div class="price-table">
-        <div class="price-row"><div><div class="name">Psicoterapia individual</div><span class="desc">Consulta psicológica presencial u online</span></div><div class="price">$200.000 COP</div></div>
-        <div class="price-row"><div><div class="name">Coaching personal</div><span class="desc">Sesión individual de coaching</span></div><div class="price">$200.000 COP</div></div>
-        <div class="price-row"><div><div class="name">Sesiones sucesivas de coaching</div><span class="desc">A partir de la segunda sesión</span></div><div class="price">$200.000 COP</div></div>
-        <div class="price-row"><div><div class="name">Terapia de pareja</div></div><div class="price">$200.000 COP</div></div>
-        <div class="price-row"><div><div class="name">Terapia familiar / Coaching familiar</div></div><div class="price">$200.000 COP</div></div>
-        <div class="price-row"><div><div class="name">Terapia cognitivo-conductual (TCC)</div></div><div class="price">$200.000 COP</div></div>
-        <div class="price-row"><div><div class="name">Psicología positiva</div></div><div class="price">$200.000 COP</div></div>
-        <div class="price-row"><div><div class="name">Consulta por ansiedad</div></div><div class="price">$200.000 COP</div></div>
-        <div class="price-row"><div><div class="name">Consulta por falta de motivación</div></div><div class="price">$200.000 COP</div></div>
-        <div class="price-row"><div><div class="name">Orientación vocacional</div></div><div class="price">$200.000 COP</div></div>
-      </div>
+      <div class="price-table" id="precios-personal"></div>
 
       <p class="eyebrow" style="margin-top:44px;">Empresarial</p>
-      <div class="price-table">
-        <div class="price-row"><div><div class="name">Salud mental empresarial</div></div><div class="price">$600.000 COP</div></div>
-        <div class="price-row"><div><div class="name">Capacitaciones empresariales</div></div><div class="price">$600.000 COP</div></div>
-        <div class="price-row"><div><div class="name">Coaching de equipos</div></div><div class="price">$600.000 COP</div></div>
-        <div class="price-row"><div><div class="name">Coaching empresarial</div></div><div class="price">$600.000 COP</div></div>
-      </div>
-      <p class="price-note">Tarifas de referencia. Se confirma el valor exacto al agendar según el tipo de proceso y modalidad.</p>
+      <div class="price-table" id="precios-empresarial"></div>
+
+      <p class="price-note" id="precios-nota"></p>
     </div>
   </section>
 
@@ -85,19 +65,21 @@
     <div class="wrap">
       <h2>Agenda tu primera sesión hoy mismo.</h2>
       <div class="hero-ctas">
-        <a class="btn btn-solid" style="background:var(--paper);color:var(--ink);" href="contacto.html">Reservar una visita</a>
+        <a class="btn btn-solid" style="background:#25D366;color:#fff;" href="https://wa.me/573117472236?text=Hola%20Ren%C3%A9%2C%20quiero%20agendar%20una%20consulta" target="_blank" rel="noopener">Escribir por WhatsApp</a>
       </div>
     </div>
   </section>
-
 </main>
+
 <footer>
   <div class="wrap">
     <span>© 2026 René Fernando Chisco Ríos · Psicólogo</span>
     <span>Núm. Colegiado 95-00 · Dosquebradas, Risaralda, Colombia</span>
   </div>
 </footer>
+
 <script src="assets/js/nav.js"></script>
+<script src="assets/js/precios.js"></script>
 <a class="whatsapp-float" href="https://wa.me/573117472236?text=Hola%20Ren%C3%A9%2C%20quiero%20agendar%20una%20consulta" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
   <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16 2.9C8.8 2.9 2.9 8.8 2.9 16c0 2.5.7 4.9 2 7L3 29l6.2-1.9c2 .1 4 1.7 6.8 1.7 7.2 0 13.1-5.9 13.1-13.1S23.2 2.9 16 2.9zm0 23.8c-2.4 0-4.6-.7-6.5-1.9l-.5-.3-4.6 1.4 1.5-4.4-.3-.5c-1.3-2-2-4.3-2-6.7C3.6 9.2 9.2 3.6 16 3.6S28.4 9.2 28.4 16 22.8 26.7 16 26.7zm7.1-9.2c-.4-.2-2.3-1.1-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.3-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7-.1-.2-.9-2.2-1.3-3-.3-.8-.7-.7-.9-.7h-.8c-.3 0-.7.1-1 .5-.4.4-1.4 1.3-1.4 3.3s1.4 3.8 1.6 4.1c.2.3 2.8 4.3 6.9 6 4.1 1.7 4.1 1.1 4.8 1.1.7 0 2.3-.9 2.6-1.9.3-.9.3-1.7.2-1.9-.1-.2-.4-.3-.8-.5z"/></svg>
 </a>

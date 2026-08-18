@@ -1,0 +1,21 @@
+{
+  "personal": [
+    {"nombre":"Psicoterapia individual","descripcion":"Consulta psicológica presencial u online","precio":"$200.000 COP"},
+    {"nombre":"Coaching personal","descripcion":"Sesión individual de coaching","precio":"$200.000 COP"},
+    {"nombre":"Sesiones sucesivas de coaching","descripcion":"A partir de la segunda sesión","precio":"$200.000 COP"},
+    {"nombre":"Terapia de pareja","descripcion":"","precio":"$200.000 COP"},
+    {"nombre":"Terapia familiar / Coaching familiar","descripcion":"","precio":"$200.000 COP"},
+    {"nombre":"Terapia cognitivo-conductual (TCC)","descripcion":"","precio":"$200.000 COP"},
+    {"nombre":"Psicología positiva","descripcion":"","precio":"$200.000 COP"},
+    {"nombre":"Consulta por ansiedad","descripcion":"","precio":"$200.000 COP"},
+    {"nombre":"Consulta por falta de motivación","descripcion":"","precio":"$200.000 COP"},
+    {"nombre":"Orientación vocacional","descripcion":"","precio":"$200.000 COP"}
+  ],
+  "empresarial": [
+    {"nombre":"Salud mental empresarial","descripcion":"","precio":"$600.000 COP"},
+    {"nombre":"Capacitaciones empresariales","descripcion":"","precio":"$600.000 COP"},
+    {"nombre":"Coaching de equipos","descripcion":"","precio":"$600.000 COP"},
+    {"nombre":"Coaching empresarial","descripcion":"","precio":"$600.000 COP"}
+  ],
+  "nota": "Tarifas de referencia. Se confirma el valor exacto al agendar según el tipo de proceso y modalidad."
+}
