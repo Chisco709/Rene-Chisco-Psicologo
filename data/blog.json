@@ -1,0 +1,81 @@
+{
+  "hero": {
+    "eyebrow": "Blog",
+    "title": "Ideas para una vida con más sentido",
+    "description": "Reflexiones sobre psicología, coaching, bienestar emocional y crecimiento personal — escritas desde 35 años de experiencia acompañando procesos de transformación."
+  },
+  "articles": [
+    {
+      "id": "rueda-de-la-vida",
+      "url": "blog-rueda-de-la-vida.html",
+      "category": "Coaching",
+      "title": "La Rueda de la Vida: el primer diagnóstico para cualquier cambio real",
+      "excerpt": "Por qué esta herramienta —y no una lista de propósitos— es el mejor punto de partida para saber qué área de tu vida necesita atención hoy.",
+      "readTime": "6 min de lectura",
+      "colorFrom": "wheel-1",
+      "colorTo": "wheel-3",
+      "icon": "wheel",
+      "published": true
+    },
+    {
+      "id": "retos-30-dias",
+      "url": "blog-retos-30-dias.html",
+      "category": "Transformación personal",
+      "title": "Por qué un Reto de 30 días sí puede cambiar tu vida",
+      "excerpt": "La ciencia detrás de la neuroplasticidad, el momentum y la estructura — y por qué 30 días es el número correcto, ni muy corto ni imposible.",
+      "readTime": "5 min de lectura",
+      "colorFrom": "wheel-2",
+      "colorTo": "wheel-5",
+      "icon": "calendar",
+      "published": true
+    },
+    {
+      "id": "ansiedad-estres",
+      "url": "",
+      "category": "Salud mental",
+      "title": "Ansiedad y estrés: 5 señales de que tu mente pide ayuda",
+      "excerpt": "Próximamente.",
+      "readTime": "Muy pronto",
+      "colorFrom": "wheel-4",
+      "colorTo": "wheel-6",
+      "icon": "mind",
+      "published": false
+    },
+    {
+      "id": "sentido-adversidad",
+      "url": "",
+      "category": "Logoterapia",
+      "title": "Encontrar sentido incluso en la adversidad",
+      "excerpt": "Próximamente.",
+      "readTime": "Muy pronto",
+      "colorFrom": "wheel-3",
+      "colorTo": "wheel-7",
+      "icon": "target",
+      "published": false
+    },
+    {
+      "id": "hablar-en-publico",
+      "url": "",
+      "category": "Oratoria",
+      "title": "Hablar en público sin miedo: la técnica antes que el talento",
+      "excerpt": "Próximamente.",
+      "readTime": "Muy pronto",
+      "colorFrom": "wheel-5",
+      "colorTo": "wheel-2",
+      "icon": "mic",
+      "published": false
+    },
+    {
+      "id": "coaching-vs-terapia",
+      "url": "",
+      "category": "Coaching",
+      "title": "Coaching vs. terapia: ¿cuál necesitas hoy?",
+      "excerpt": "Próximamente.",
+      "readTime": "Muy pronto",
+      "colorFrom": "wheel-6",
+      "colorTo": "wheel-1",
+      "icon": "book",
+      "published": false
+    }
+  ]
+}

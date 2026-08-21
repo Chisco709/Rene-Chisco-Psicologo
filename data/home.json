@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "eyebrow": "Psicólogo · Coach Ontológico · Conferencista",
+    "title": "Tu vida puede tener",
+    "title_highlight": "otro nivel.",
+    "lead": "Durante 35 años he explorado la complejidad humana para entender qué nos hace realmente felices. Hoy me pongo a tu servicio para acompañarte en el proceso de transformación que tu vida quizá ya te está pidiendo.",
+    "cta_primary_label": "Reservar una visita",
+    "cta_secondary_label": "Descubre tu reto de 30 días",
+    "stats": [
+      { "value": "35+", "label": "AÑOS DE EXPERIENCIA" },
+      { "value": "7", "label": "RETOS DE TRANSFORMACIÓN" },
+      { "value": "5", "label": "LIBROS PUBLICADOS" },
+      { "value": "95-00", "label": "NÚM. COLEGIADO" }
+    ],
+    "wheel_caption": "La herramienta de diagnóstico con la que iniciamos cada proceso de coaching, adaptada aquí a los 7 Retos de 30 días."
+  },
+  "about_teaser": {
+    "eyebrow": "Sobre mí",
+    "title": "Unas pocas palabras…",
+    "body": "La vida es demasiado corta —y única— como para desperdiciarla cargando culpas, miedos, resentimientos o preocupaciones que nos roban la paz. He apoyado mi trabajo en la Psicología Positiva, la Logoterapia, la Terapia Cognitivo-Conductual y el coaching para ayudarte a trazar y alcanzar tus metas.",
+    "link_label": "Conóceme mejor"
+  },
+  "especialidades_teaser": {
+    "eyebrow": "Enfoque clínico",
+    "title": "Cuatro caminos, un mismo propósito: tu bienestar.",
+    "link_label": "Ver todas las especialidades",
+    "items": ["Logoterapia", "Psicología Humanista", "Coaching", "Terapia Cognitivo-Conductual"]
+  },
+  "retos_teaser": {
+    "eyebrow": "Sistema de transformación",
+    "title": "Los 7 Retos de 30 días",
+    "link_label": "Ver los 7 retos y hacer el test",
+    "intro": "Cada reto trabaja una dimensión esencial del ser: felicidad, éxito personal, historia de vida, mentalidad, oratoria, propósito o resiliencia.",
+    "preview_cards": [
+      { "title": "Aprende a Ser Feliz", "description": "Cuida tu salud mental y previene estrés, ansiedad y depresión.", "tag": "Felicidad", "color": "wheel-1" },
+      { "title": "Crea tu Sistema de Éxito Personal", "description": "Diseña hábitos, propósito y foco para una vida sostenible.", "tag": "Estructura", "color": "wheel-2" },
+      { "title": "Desafío Oratoria", "description": "Domina el escenario con voz, confianza y presencia.", "tag": "Comunicación", "color": "wheel-5" }
+    ]
+  },
+  "opiniones_teaser": {
+    "eyebrow": "Opiniones de pacientes",
+    "title": "Lo que dicen quienes ya hicieron el proceso",
+    "link_label": "Ver todas las opiniones"
+  },
+  "cta_final": {
+    "eyebrow": "¿Listo para empezar?",
+    "title": "Da el primer paso hacia la vida que quieres.",
+    "cta_primary_label": "Reservar una visita",
+    "cta_secondary_label": "Ver precios"
+  }
+}

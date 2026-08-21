@@ -1,0 +1,21 @@
+{
+  "psicologo": {
+    "nombre": "René Fernando Chisco Ríos",
+    "colegiado": "95-00"
+  },
+  "contacto": {
+    "telefono": "+57 606 7329023",
+    "whatsapp_numero": "573117472236",
+    "whatsapp_mensaje": "Hola René, quiero agendar una consulta",
+    "direccion": "CR 35BIS TRANS 25 314, B. Los Molinos, Conjunto residencial Molivento de las Villas 1, MZ 7 Casa 21",
+    "ciudad": "Dosquebradas",
+    "departamento": "Risaralda",
+    "codigo_postal": "661001",
+    "pais": "Colombia"
+  },
+  "redes_sociales": {
+    "instagram": "https://www.instagram.com/coachrenechisco/",
+    "youtube": "https://www.youtube.com/@renechisco",
+    "x": "https://x.com/renechisco"
+  }
+}

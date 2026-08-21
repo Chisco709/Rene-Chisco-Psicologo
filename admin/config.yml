@@ -5,12 +5,161 @@ backend:
   base_url: https://www.renefernandochisco.com
   auth_endpoint: api/auth
 
+# Con esto, cada cambio del psicólogo crea un borrador (Pull Request) con su
+# propio deploy de vista previa en Vercel, en vez de publicarse directo en main.
+# Así puede revisar cómo queda ANTES de que se vea en la web real, y tú puedes
+# revertir con un clic si algo sale mal.
+publish_mode: editorial_workflow
+
 media_folder: "assets/img/uploads"
 public_folder: "/assets/img/uploads"
 
 locale: "es"
 
 collections:
+
+  # ---------- INICIO (home.json) ----------
+  - name: "inicio"
+    label: "Página de inicio"
+    files:
+      - label: "Contenido de la portada"
+        name: "home"
+        file: "data/home.json"
+        fields:
+          - label: "Encabezado principal (Hero)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Texto pequeño superior", name: "eyebrow", widget: "string" }
+              - { label: "Título (parte normal)", name: "title", widget: "string" }
+              - { label: "Título (parte resaltada)", name: "title_highlight", widget: "string" }
+              - { label: "Párrafo de introducción", name: "lead", widget: "text" }
+              - { label: "Texto botón principal", name: "cta_primary_label", widget: "string" }
+              - { label: "Texto botón secundario", name: "cta_secondary_label", widget: "string" }
+              - label: "Estadísticas (los 4 números)"
+                name: "stats"
+                widget: "list"
+                min: 1
+                max: 4
+                fields:
+                  - { label: "Número / valor", name: "value", widget: "string" }
+                  - { label: "Descripción", name: "label", widget: "string" }
+              - { label: "Texto bajo la rueda de la vida", name: "wheel_caption", widget: "text" }
+          - label: "Bloque 'Sobre mí' (resumen)"
+            name: "about_teaser"
+            widget: "object"
+            fields:
+              - { label: "Texto pequeño superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Párrafo", name: "body", widget: "text" }
+              - { label: "Texto del enlace", name: "link_label", widget: "string" }
+          - label: "Bloque 'Especialidades' (resumen)"
+            name: "especialidades_teaser"
+            widget: "object"
+            fields:
+              - { label: "Texto pequeño superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto del enlace", name: "link_label", widget: "string" }
+              - label: "Especialidades listadas"
+                name: "items"
+                widget: "list"
+                field: { label: "Nombre", name: "item", widget: "string" }
+          - label: "Bloque 'Retos de 30 días' (resumen)"
+            name: "retos_teaser"
+            widget: "object"
+            fields:
+              - { label: "Texto pequeño superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto del enlace", name: "link_label", widget: "string" }
+              - { label: "Párrafo introductorio", name: "intro", widget: "text" }
+              - label: "Tarjetas de retos destacadas"
+                name: "preview_cards"
+                widget: "list"
+                min: 1
+                max: 3
+                fields:
+                  - { label: "Título del reto", name: "title", widget: "string" }
+                  - { label: "Descripción", name: "description", widget: "string" }
+                  - { label: "Etiqueta", name: "tag", widget: "string" }
+                  - label: "Color"
+                    name: "color"
+                    widget: "select"
+                    options: ["wheel-1", "wheel-2", "wheel-3", "wheel-4", "wheel-5", "wheel-6", "wheel-7"]
+          - label: "Bloque 'Opiniones' (resumen)"
+            name: "opiniones_teaser"
+            widget: "object"
+            fields:
+              - { label: "Texto pequeño superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto del enlace", name: "link_label", widget: "string" }
+              - label: "Nota"
+                name: "_nota"
+                widget: "text"
+                required: false
+                default: "Las tarjetas de opiniones que se muestran aquí se toman automáticamente de la sección 'Opiniones de pacientes' (las 3 más recientes). Para cambiarlas, edita esa colección."
+          - label: "Franja final (llamado a la acción)"
+            name: "cta_final"
+            widget: "object"
+            fields:
+              - { label: "Texto pequeño superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto botón principal", name: "cta_primary_label", widget: "string" }
+              - { label: "Texto botón secundario", name: "cta_secondary_label", widget: "string" }
+
+  # ---------- BLOG (blog.json) ----------
+  - name: "blog"
+    label: "Blog"
+    files:
+      - label: "Blog"
+        name: "blog"
+        file: "data/blog.json"
+        fields:
+          - label: "Encabezado del blog"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Texto pequeño superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Descripción", name: "description", widget: "text" }
+          - label: "Artículos"
+            name: "articles"
+            widget: "list"
+            summary: "{{title}} — {{fields.published}}"
+            fields:
+              - label: "Identificador"
+                name: "id"
+                widget: "string"
+                hint: "No lo cambies si el artículo ya existe: se usa como enlace interno."
+              - label: "Archivo del artículo (déjalo vacío si aún no existe)"
+                name: "url"
+                widget: "string"
+                required: false
+              - label: "Categoría"
+                name: "category"
+                widget: "select"
+                options: ["Coaching", "Transformación personal", "Salud mental", "Logoterapia", "Oratoria"]
+              - { label: "Título del artículo", name: "title", widget: "string" }
+              - { label: "Resumen / extracto", name: "excerpt", widget: "text" }
+              - { label: "Tiempo de lectura", name: "readTime", widget: "string" }
+              - label: "Color inicial"
+                name: "colorFrom"
+                widget: "select"
+                options: ["wheel-1", "wheel-2", "wheel-3", "wheel-4", "wheel-5", "wheel-6", "wheel-7"]
+              - label: "Color final"
+                name: "colorTo"
+                widget: "select"
+                options: ["wheel-1", "wheel-2", "wheel-3", "wheel-4", "wheel-5", "wheel-6", "wheel-7"]
+              - label: "Ícono"
+                name: "icon"
+                widget: "select"
+                options: ["wheel", "calendar", "mind", "target", "mic", "book"]
+              - label: "¿Publicado?"
+                name: "published"
+                widget: "boolean"
+                default: false
+                hint: "Actívalo solo cuando el archivo del artículo ya esté listo y subido."
+
+  # ---------- PRECIOS (sin cambios) ----------
   - name: "precios"
     label: "Precios"
     files:
@@ -36,6 +185,7 @@ collections:
             name: "nota"
             widget: "text"
 
+  # ---------- OPINIONES (sin cambios) ----------
   - name: "testimonios"
     label: "Opiniones de pacientes"
     files:
@@ -49,3 +199,37 @@ collections:
             fields:
               - { label: "Texto de la opinión", name: "texto", widget: "text" }
               - { label: "Firma", name: "autor", widget: "string", default: "Paciente" }
+
+  # ---------- DATOS GENERALES (site.json) ----------
+  - name: "sitio"
+    label: "Datos de contacto y redes"
+    files:
+      - label: "Configuración global"
+        name: "site"
+        file: "data/site.json"
+        fields:
+          - label: "Psicólogo"
+            name: "psicologo"
+            widget: "object"
+            fields:
+              - { label: "Nombre completo", name: "nombre", widget: "string" }
+              - { label: "Número de colegiado", name: "colegiado", widget: "string" }
+          - label: "Contacto"
+            name: "contacto"
+            widget: "object"
+            fields:
+              - { label: "Teléfono", name: "telefono", widget: "string" }
+              - { label: "WhatsApp (solo números, con indicativo)", name: "whatsapp_numero", widget: "string" }
+              - { label: "Mensaje predeterminado de WhatsApp", name: "whatsapp_mensaje", widget: "string" }
+              - { label: "Dirección", name: "direccion", widget: "string" }
+              - { label: "Ciudad", name: "ciudad", widget: "string" }
+              - { label: "Departamento", name: "departamento", widget: "string" }
+              - { label: "Código postal", name: "codigo_postal", widget: "string" }
+              - { label: "País", name: "pais", widget: "string" }
+          - label: "Redes sociales"
+            name: "redes_sociales"
+            widget: "object"
+            fields:
+              - { label: "Instagram", name: "instagram", widget: "string" }
+              - { label: "YouTube", name: "youtube", widget: "string" }
+              - { label: "X (Twitter)", name: "x", widget: "string" }
