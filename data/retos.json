@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "eyebrow": "Multimedia",
+    "title": "Consultorio y conferencias"
+  },
+  "items": [
+    { "tipo": "foto", "imagen": "https://pixel-p1.s3.sa-east-1.amazonaws.com/doctor/photos/ef4a4b9f/ef4a4b9f-d46b-459e-ac37-1282eba0af87_large.jpg", "alt": "Fotografía 1" },
+    { "tipo": "foto", "imagen": "https://pixel-p1.s3.sa-east-1.amazonaws.com/doctor/photos/5dc89e14/5dc89e14-d0f5-44d9-9ae5-9ee9ef902f99_large.jpg", "alt": "Fotografía 2" },
+    { "tipo": "foto", "imagen": "https://pixel-p1.s3.sa-east-1.amazonaws.com/doctor/photos/fc542acb/fc542acb-add0-44e6-b1a1-5a49595976d9_large.jpg", "alt": "Fotografía 3" },
+    { "tipo": "foto", "imagen": "https://pixel-p1.s3.sa-east-1.amazonaws.com/doctor/photos/bae48513/bae48513-c38f-4f15-8e23-16f8cf1050ab_large.jpg", "alt": "Fotografía 4" },
+    { "tipo": "video", "youtube_id": "64cEdWdFNeU" },
+    { "tipo": "video", "youtube_id": "OTorhmaWQX4" },
+    { "tipo": "foto", "imagen": "https://pixel-p1.s3.sa-east-1.amazonaws.com/doctor/photos/46d9dd3c/46d9dd3c-110b-48b0-a8e8-f6e4e6daa7b5_large.jpg", "alt": "Fotografía 5" },
+    { "tipo": "foto", "imagen": "https://pixel-p1.s3.sa-east-1.amazonaws.com/doctor/photos/6a253178/6a253178-7743-4be4-a4a2-eec3edab1559_large.jpg", "alt": "Fotografía 6" }
+  ]
+}

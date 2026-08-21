@@ -1,0 +1,21 @@
+{
+  "hero": {
+    "eyebrow": "Enfoque clínico",
+    "title": "Cuatro caminos, un mismo propósito: tu bienestar."
+  },
+  "especialidades": [
+    { "titulo": "Logoterapia", "descripcion": "Encontrar sentido incluso en la adversidad, inspirados en Viktor Frankl." },
+    { "titulo": "Psicología Humanista", "descripcion": "Conectar con tu potencial, tu libertad y tu responsabilidad como persona única." },
+    { "titulo": "Coaching", "descripcion": "Ontológico, personal, familiar y empresarial: trazar metas y alcanzarlas." },
+    { "titulo": "Terapia Cognitivo-Conductual", "descripcion": "Herramientas prácticas para entender y transformar patrones de pensamiento." }
+  ],
+  "areas_titulo": "Áreas de acompañamiento",
+  "areas": [
+    "Depresión", "Ansiedad", "Estrés / Burnout", "Trastorno de pánico",
+    "Adicciones", "Baja autoestima", "Conflictos de pareja", "Conflictos familiares",
+    "Timidez", "Insatisfacción personal", "Estrés laboral", "Orientación vocacional"
+  ],
+  "cta": {
+    "titulo": "Encuentra el enfoque que tu proceso necesita."
+  }
+}

@@ -243,6 +243,123 @@
             ]
           },
           {
+            name: "especialidades",
+            label: "Especialidades",
+            files: [
+              {
+                label: "Página de especialidades",
+                name: "especialidades",
+                file: "data/especialidades.json",
+                fields: [
+                  {
+                    label: "Encabezado", name: "hero", widget: "object",
+                    fields: [
+                      { label: "Texto pequeño superior", name: "eyebrow", widget: "string" },
+                      { label: "Título", name: "title", widget: "string" }
+                    ]
+                  },
+                  {
+                    label: "Las 4 especialidades", name: "especialidades", widget: "list", min: 1, max: 4,
+                    fields: [
+                      { label: "Nombre", name: "titulo", widget: "string" },
+                      { label: "Descripción", name: "descripcion", widget: "text" }
+                    ]
+                  },
+                  { label: "Título de la lista de áreas", name: "areas_titulo", widget: "string" },
+                  {
+                    label: "Áreas de acompañamiento", name: "areas", widget: "list",
+                    field: { label: "Área", name: "area", widget: "string" }
+                  },
+                  {
+                    label: "Franja final", name: "cta", widget: "object",
+                    fields: [ { label: "Título", name: "titulo", widget: "string" } ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            name: "retos",
+            label: "Retos de 30 días",
+            files: [
+              {
+                label: "Los 7 Retos",
+                name: "retos",
+                file: "data/retos.json",
+                fields: [
+                  {
+                    label: "Encabezado de la página", name: "hero", widget: "object",
+                    fields: [
+                      { label: "Texto pequeño superior", name: "eyebrow", widget: "string" },
+                      { label: "Título", name: "title", widget: "string" },
+                      { label: "Descripción", name: "descripcion", widget: "text" }
+                    ]
+                  },
+                  {
+                    label: "Retos", name: "retos", widget: "list", min: 7, max: 7,
+                    summary: "{{titulo}} — {{fields.estado}}",
+                    fields: [
+                      { label: "Identificador (no cambiar)", name: "id", widget: "string", hint: "Se usa como enlace interno, no lo modifiques." },
+                      { label: "Color", name: "color", widget: "select", options: ["wheel-1","wheel-2","wheel-3","wheel-4","wheel-5","wheel-6","wheel-7"] },
+                      { label: "Título del reto", name: "titulo", widget: "string" },
+                      { label: "Subtítulo / gancho", name: "subtitulo", widget: "text" },
+                      { label: "Etiqueta", name: "etiqueta", widget: "string" },
+                      { label: "Estado", name: "estado", widget: "select", options: [{label: "Disponible", value: "disponible"}, {label: "Próximamente", value: "proximamente"}] },
+                      { label: "Frase / cita destacada (opcional)", name: "cita", widget: "string", required: false },
+                      { label: "Párrafos introductorios", name: "parrafos", widget: "list", field: { label: "Párrafo", name: "texto", widget: "text" } },
+                      { label: "Título sección extra (opcional)", name: "seccion_extra_titulo", widget: "string", required: false },
+                      { label: "Texto sección extra (opcional)", name: "seccion_extra_texto", widget: "text", required: false },
+                      { label: "Título del bloque de sesiones/puntos", name: "bloque_titulo", widget: "string", required: false },
+                      {
+                        label: "Sesiones o puntos clave", name: "bloque_items", widget: "list", required: false,
+                        fields: [
+                          { label: "Título", name: "titulo", widget: "string" },
+                          { label: "Descripción", name: "texto", widget: "text" }
+                        ]
+                      },
+                      { label: "Párrafo de cierre (opcional)", name: "parrafo_final", widget: "text", required: false },
+                      { label: "Precio de contado", name: "precio_contado", widget: "string", required: false },
+                      { label: "Etiqueta del precio de contado", name: "precio_contado_label", widget: "string", required: false },
+                      { label: "Precio diferido", name: "precio_diferido", widget: "string", required: false },
+                      { label: "Etiqueta del precio diferido", name: "precio_diferido_label", widget: "string", required: false },
+                      { label: "Texto del botón", name: "cta_texto", widget: "string" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            name: "multimedia",
+            label: "Multimedia",
+            files: [
+              {
+                label: "Galería",
+                name: "multimedia",
+                file: "data/multimedia.json",
+                fields: [
+                  {
+                    label: "Encabezado", name: "hero", widget: "object",
+                    fields: [
+                      { label: "Texto pequeño superior", name: "eyebrow", widget: "string" },
+                      { label: "Título", name: "title", widget: "string" }
+                    ]
+                  },
+                  {
+                    label: "Elementos de la galería", name: "items", widget: "list",
+                    summary: "{{fields.tipo}}",
+                    fields: [
+                      { label: "Tipo", name: "tipo", widget: "select", options: [{label: "Foto", value: "foto"}, {label: "Video de YouTube", value: "video"}] },
+                      { label: "Foto (solo si el tipo es Foto)", name: "imagen", widget: "image", required: false },
+                      { label: "Texto alternativo (solo Foto)", name: "alt", widget: "string", required: false },
+                      { label: "ID del video de YouTube (solo si el tipo es Video)", name: "youtube_id", widget: "string", required: false, hint: "Es la parte final del link, ej: en youtube.com/watch?v=64cEdWdFNeU el ID es 64cEdWdFNeU" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
             name: "sitio",
             label: "Datos de contacto y redes",
             files: [

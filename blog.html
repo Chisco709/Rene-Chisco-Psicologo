@@ -3,176 +3,129 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Blog · Artículos sobre psicología y coaching · René Chisco</title>
-<meta name="description" content="Artículos sobre psicología, coaching, bienestar emocional y crecimiento personal, escritos por René Fernando Chisco Ríos.">
-<link rel="canonical" href="https://www.renefernandochisco.com/blog.html">
+<title>La Rueda de la Vida: el primer diagnóstico para cualquier cambio real · René Chisco</title>
+<meta name="description" content="Por qué esta herramienta —y no una lista de propósitos— es el mejor punto de partida para saber qué área de tu vida necesita atención hoy.">
+<link rel="canonical" href="https://www.renefernandochisco.com/blog-rueda-de-la-vida.html">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#1c2b24">
 <link rel="icon" type="image/jpeg" href="assets/img/imagen-logo.jpg">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:site_name" content="René Fernando Chisco Ríos · Psicólogo">
-<meta property="og:title" content="Blog · Artículos sobre psicología y coaching · René Chisco">
-<meta property="og:description" content="Artículos sobre psicología, coaching, bienestar emocional y crecimiento personal.">
-<meta property="og:url" content="https://www.renefernandochisco.com/blog.html">
+<meta property="og:title" content="La Rueda de la Vida: el primer diagnóstico para cualquier cambio real">
+<meta property="og:description" content="Por qué esta herramienta —y no una lista de propósitos— es el mejor punto de partida para saber qué área de tu vida necesita atención hoy.">
+<meta property="og:url" content="https://www.renefernandochisco.com/blog-rueda-de-la-vida.html">
 <meta property="og:locale" content="es_CO">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,450&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-<!-- CSS embebido: mismas variables, colores y componentes de assets/css/style.css -->
 <style>
 :root{
-    --ink:#081a33;
-    --paper:#ffffff;
-    --card:#eef6fb;
-    --moss:#044BD9;
-    --moss-deep:#03379e;
-    --ochre:#049DD9;
-    --clay:#04D9C4;
-    --line: rgba(4,75,217,.14);
-    --wheel-1:#044BD9;
-    --wheel-2:#0468BF;
-    --wheel-3:#049DD9;
-    --wheel-4:#04D9C4;
-    --wheel-5:#03379e;
-    --wheel-6:#03b6a3;
-    --wheel-7:#1f6fe0;
-    --radius: 18px;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Karla',sans-serif;
-    font-size:16px;
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-  }
-  h1,h2,h3,h4{
-    font-family:'Fraunces',serif;
-    font-weight:450;
-    margin:0 0 .4em 0;
-    letter-spacing:-.01em;
-  }
-  a{color:inherit;}
-  img{max-width:100%;display:block;}
-  .wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
-  .eyebrow{
-    font-family:'IBM Plex Mono',monospace;
-    font-size:12.5px;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-    color:var(--moss);
-    display:flex;
-    align-items:center;
-    gap:10px;
-  }
-  .eyebrow::before{content:"";width:22px;height:1px;background:var(--clay);display:inline-block;}
-  section{padding:96px 0;}
-  @media(max-width:720px){section{padding:64px 0;}}
-  .btn{
-    display:inline-flex;align-items:center;gap:8px;
-    font-family:'Karla',sans-serif;font-weight:600;font-size:15px;
-    padding:14px 26px;border-radius:100px;
-    text-decoration:none;border:1px solid transparent;
-    transition:transform .2s ease, background .2s ease;
-  }
-  .btn-solid{background:var(--ink);color:var(--paper);}
-  .btn-solid:hover{transform:translateY(-2px);background:var(--moss-deep);}
-  .btn-line{border-color:var(--ink);color:var(--ink);}
-  .btn-line:hover{transform:translateY(-2px);background:var(--ink);color:var(--paper);}
+  --ink:#081a33; --paper:#ffffff; --card:#eef6fb;
+  --moss:#044BD9; --moss-deep:#03379e; --ochre:#049DD9; --clay:#04D9C4;
+  --line: rgba(4,75,217,.14);
+  --wheel-1:#044BD9; --wheel-2:#0468BF; --wheel-3:#049DD9; --wheel-4:#04D9C4;
+  --wheel-5:#03379e; --wheel-6:#03b6a3; --wheel-7:#1f6fe0;
+  --radius: 18px;
+  --cat-from: var(--wheel-1); --cat-to: var(--wheel-3);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Karla',sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:450;margin:0 0 .4em 0;letter-spacing:-.01em;}
+a{color:inherit;}
+img{max-width:100%;display:block;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--moss);display:flex;align-items:center;gap:10px;}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--clay);display:inline-block;}
+section{padding:96px 0;}
+@media(max-width:720px){section{padding:56px 0;}}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:'Karla',sans-serif;font-weight:600;font-size:15px;padding:14px 26px;border-radius:100px;text-decoration:none;border:1px solid transparent;transition:transform .2s ease, background .2s ease;}
+.btn-solid{background:var(--ink);color:var(--paper);}
+.btn-solid:hover{transform:translateY(-2px);background:var(--moss-deep);}
+.btn-line{border-color:var(--ink);color:var(--ink);}
+.btn-line:hover{transform:translateY(-2px);background:var(--ink);color:var(--paper);}
 
-  /* HEADER */
-  header{
-    position:sticky;top:0;z-index:50;
-    background:rgba(242,238,226,.86);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line);
-  }
-  header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;}
-  .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-size:19px;text-decoration:none;color:var(--ink);}
-  .brand-mark{
-    width:34px;height:34px;border-radius:50%;
-    background:conic-gradient(var(--wheel-1) 0 51.4deg,var(--wheel-2) 0 102.8deg,var(--wheel-3) 0 154.2deg,var(--wheel-4) 0 205.6deg,var(--wheel-5) 0 257deg,var(--wheel-6) 0 308.4deg,var(--wheel-7) 0 360deg);
-    flex:none;
-  }
-  nav.mainnav{display:flex;gap:28px;font-size:14.5px;}
-  nav.mainnav a{text-decoration:none;opacity:.78;}
-  nav.mainnav a:hover{opacity:1;}
-  nav.mainnav a.active{opacity:1;font-weight:600;}
-  header .btn{padding:10px 20px;font-size:13.5px;}
-  .navtoggle{display:none;background:none;border:none;font-family:'Fraunces',serif;font-size:15px;cursor:pointer;color:var(--ink);}
-  @media(max-width:880px){
-    nav.mainnav{
-      display:none;position:absolute;top:100%;left:0;right:0;
-      background:var(--paper);border-bottom:1px solid var(--line);
-      flex-direction:column;gap:0;padding:8px 0;
-    }
-    nav.mainnav.open{display:flex;}
-    nav.mainnav a{padding:14px 28px;border-top:1px solid var(--line);}
-    nav.mainnav a:first-child{border-top:none;}
-    header .btn{display:none;}
-    .navtoggle{display:block;}
-  }
+header{position:sticky;top:0;z-index:50;background:rgba(242,238,226,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-size:19px;text-decoration:none;color:var(--ink);}
+.brand-mark{width:34px;height:34px;border-radius:50%;background:conic-gradient(var(--wheel-1) 0 51.4deg,var(--wheel-2) 0 102.8deg,var(--wheel-3) 0 154.2deg,var(--wheel-4) 0 205.6deg,var(--wheel-5) 0 257deg,var(--wheel-6) 0 308.4deg,var(--wheel-7) 0 360deg);flex:none;}
+nav.mainnav{display:flex;gap:28px;font-size:14.5px;}
+nav.mainnav a{text-decoration:none;opacity:.78;}
+nav.mainnav a:hover{opacity:1;}
+nav.mainnav a.active{opacity:1;font-weight:600;}
+header .btn{padding:10px 20px;font-size:13.5px;}
+.navtoggle{display:none;background:none;border:none;font-family:'Fraunces',serif;font-size:15px;cursor:pointer;color:var(--ink);}
+@media(max-width:880px){
+  nav.mainnav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:8px 0;}
+  nav.mainnav.open{display:flex;}
+  nav.mainnav a{padding:14px 28px;border-top:1px solid var(--line);}
+  nav.mainnav a:first-child{border-top:none;}
+  header .btn{display:none;}
+  .navtoggle{display:block;}
+}
 
-  /* PAGE HERO */
-  .page-hero{padding-top:56px;padding-bottom:24px;}
-  .page-hero .eyebrow{justify-content:center;}
-  .page-hero h1{text-align:center;font-size:clamp(30px,4.5vw,48px);}
-  .page-hero p{text-align:center;max-width:60ch;margin:14px auto 0;color:#3a4941;font-size:16.5px;}
-  .breadcrumb{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#5a6a61;text-align:center;margin-top:14px;}
-  .breadcrumb a{text-decoration:none;border-bottom:1px solid var(--line);}
+/* ARTICLE HERO */
+.article-hero{padding:56px 0 0;}
+.breadcrumb{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#5a6a61;margin-bottom:22px;}
+.breadcrumb a{text-decoration:none;border-bottom:1px solid var(--line);}
+.cat-chip{display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--moss-deep);margin-bottom:18px;}
+.cat-chip::before{content:"";width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--cat-from),var(--cat-to));display:inline-block;}
+.article-hero h1{font-size:clamp(32px,5vw,54px);max-width:18ch;margin-bottom:20px;}
+.article-dek{font-size:19px;color:#3a4941;max-width:60ch;margin:0 0 28px;}
+.article-meta{font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8a988e;display:flex;gap:18px;align-items:center;margin-bottom:0;}
+.gradient-rule{height:5px;border-radius:100px;background:linear-gradient(90deg,var(--cat-from),var(--cat-to));margin:36px 0 0;}
 
-  /* BLOG GRID */
-  .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:8px;}
-  @media(max-width:960px){.blog-grid{grid-template-columns:repeat(2,1fr);}}
-  @media(max-width:620px){.blog-grid{grid-template-columns:1fr;}}
-  .blog-card{
-    display:flex;flex-direction:column;text-decoration:none;color:var(--ink);
-    border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
-    background:var(--paper);transition:transform .25s ease, box-shadow .25s ease;
-  }
-  .blog-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(4,75,217,.12);}
-  .blog-card .cover{
-    aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;
-  }
-  .blog-card .cover svg{width:40px;height:40px;}
-  .blog-card .body{padding:22px;display:flex;flex-direction:column;gap:8px;flex:1;}
-  .blog-card .cat{
-    font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;
-    letter-spacing:.06em;color:var(--moss);
-  }
-  .blog-card h3{font-size:18.5px;line-height:1.25;margin:0;}
-  .blog-card p{font-size:14px;color:#5a6a61;margin:0;flex:1;}
-  .blog-card .meta{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8a988e;margin-top:6px;}
-  .blog-card.soon{cursor:default;opacity:.72;}
-  .blog-card.soon:hover{transform:none;box-shadow:none;}
+/* ARTICLE BODY */
+.article-body{max-width:680px;margin:0 auto;padding-top:56px;}
+.article-body p{font-size:18px;line-height:1.85;color:#1f2f27;margin:0 0 26px;}
+.article-body p:first-of-type::first-letter{
+  font-family:'Fraunces',serif;font-size:64px;line-height:.78;float:left;
+  padding:6px 10px 0 0;font-weight:450;color:var(--moss);
+}
+.article-body h2{font-size:clamp(24px,3vw,30px);margin:52px 0 20px;}
+.article-body ul{padding-left:22px;margin:0 0 26px;}
+.article-body li{font-size:18px;line-height:1.75;color:#1f2f27;margin-bottom:10px;}
+.pull-quote{
+  margin:44px 0;padding:26px 30px;border-left:3px solid var(--cat-from);
+  background:linear-gradient(180deg,rgba(4,75,217,.05),transparent);
+  font-family:'Fraunces',serif;font-style:italic;font-size:22px;line-height:1.5;color:var(--ink);
+}
+.pull-quote span{display:block;margin-top:10px;font-family:'IBM Plex Mono',monospace;font-style:normal;font-size:11.5px;color:#5a6a61;letter-spacing:.04em;}
 
-  /* CTA BAND */
-  .cta-band{background:var(--ink);color:#fff;text-align:center;}
-  .cta-band h2{color:#fff;font-size:clamp(28px,4vw,42px);max-width:20ch;margin:0 auto 18px;}
-  .cta-band .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;}
+/* PRACTICE BOX */
+.practice-box{background:var(--card);border-radius:var(--radius);padding:32px 34px;margin:44px 0;}
+.practice-box h3{font-size:19px;margin-bottom:14px;}
+.practice-box ol{margin:0;padding-left:20px;}
+.practice-box li{font-size:16.5px;line-height:1.7;margin-bottom:8px;color:#1f2f27;}
 
-  footer{padding:36px 0;border-top:1px solid var(--line);}
-  footer .wrap{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:#5a6a61;flex-wrap:wrap;gap:10px;}
+/* AUTHOR + CTA */
+.author-box{max-width:680px;margin:64px auto 0;padding-top:32px;border-top:1px solid var(--line);display:flex;gap:16px;align-items:flex-start;}
+.author-avatar{width:52px;height:52px;border-radius:50%;background:conic-gradient(var(--wheel-1),var(--wheel-2),var(--wheel-3),var(--wheel-4),var(--wheel-5),var(--wheel-6),var(--wheel-7));flex:none;}
+.author-box h4{font-size:16px;margin-bottom:4px;}
+.author-box p{font-size:14.5px;color:#5a6a61;margin:0;}
 
-  /* WHATSAPP FLOTANTE */
-  .whatsapp-float{
-    position:fixed;right:22px;bottom:22px;z-index:999;
-    width:58px;height:58px;border-radius:50%;
-    background:#25D366;display:flex;align-items:center;justify-content:center;
-    box-shadow:0 8px 24px rgba(37,211,102,.45);
-    transition:transform .2s ease, box-shadow .2s ease;
-  }
-  .whatsapp-float:hover{transform:scale(1.08);box-shadow:0 10px 28px rgba(37,211,102,.6);}
-  @media(max-width:600px){.whatsapp-float{width:52px;height:52px;right:16px;bottom:16px;}}
+.cta-band{background:var(--ink);color:#fff;text-align:center;}
+.cta-band h2{color:#fff;font-size:clamp(26px,4vw,38px);max-width:22ch;margin:0 auto 18px;}
+.cta-band p{color:#c4d3c8;max-width:52ch;margin:0 auto 26px;}
+.cta-band .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;}
 
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    *{transition:none !important;}
-  }
+/* RELATED */
+.related-title{font-size:13px;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.1em;color:#5a6a61;margin-bottom:24px;}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+@media(max-width:620px){.related-grid{grid-template-columns:1fr;}}
+.related-card{display:flex;gap:16px;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:14px;padding:16px;transition:transform .2s ease, box-shadow .2s ease;}
+.related-card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(4,75,217,.1);}
+.related-cover{width:64px;height:64px;border-radius:10px;flex:none;display:flex;align-items:center;justify-content:center;}
+.related-cover svg{width:24px;height:24px;}
+.related-card h4{font-size:15.5px;margin:0 0 4px;line-height:1.3;}
+.related-card span{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8a988e;}
+
+footer{padding:36px 0;border-top:1px solid var(--line);}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:#5a6a61;flex-wrap:wrap;gap:10px;}
+.whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:999;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,.45);transition:transform .2s ease, box-shadow .2s ease;}
+.whatsapp-float:hover{transform:scale(1.08);box-shadow:0 10px 28px rgba(37,211,102,.6);}
+@media(max-width:600px){.whatsapp-float{width:52px;height:52px;right:16px;bottom:16px;}}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto;}*{transition:none !important;}}
 </style>
 </head>
 <body>
@@ -196,105 +149,89 @@
 </header>
 
 <main>
-
-  <section class="page-hero">
+  <section class="article-hero">
     <div class="wrap">
-      <p class="eyebrow">Blog</p>
-      <h1>Ideas para una vida con más sentido</h1>
-      <p>Reflexiones sobre psicología, coaching, bienestar emocional y crecimiento personal — escritas desde 35 años de experiencia acompañando procesos de transformación.</p>
-      <p class="breadcrumb"><a href="index.html">Inicio</a> / Blog</p>
+      <p class="breadcrumb"><a href="index.html">Inicio</a> / <a href="blog.html">Blog</a> / La Rueda de la Vida</p>
+      <span class="cat-chip">Coaching</span>
+      <h1>La Rueda de la Vida: el primer diagnóstico para cualquier cambio real</h1>
+      <p class="article-dek">Por qué esta herramienta —y no una lista de propósitos— es el mejor punto de partida para saber qué área de tu vida necesita atención hoy.</p>
+      <p class="article-meta"><span>René Fernando Chisco Ríos</span><span>·</span><span>6 min de lectura</span></p>
+      <div class="wrap" style="padding:0;"><div class="gradient-rule"></div></div>
     </div>
   </section>
 
-  <section style="padding-top:8px;">
+  <section style="padding-top:0;">
     <div class="wrap">
-      <div class="blog-grid">
+      <article class="article-body">
 
-        <a class="blog-card" href="blog-rueda-de-la-vida.html">
-          <div class="cover" style="background:linear-gradient(135deg,var(--wheel-1),var(--wheel-3));">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"/></svg>
-          </div>
-          <div class="body">
-            <span class="cat">Coaching</span>
-            <h3>La Rueda de la Vida: el primer diagnóstico para cualquier cambio real</h3>
-            <p>Por qué esta herramienta —y no una lista de propósitos— es el mejor punto de partida para saber qué área de tu vida necesita atención hoy.</p>
-            <span class="meta">6 min de lectura</span>
-          </div>
-        </a>
+        <p>Casi todos empezamos un proceso de cambio de la misma manera: con una lista de propósitos. Bajar de peso, ahorrar más, dedicarle más tiempo a la familia, avanzar en el trabajo. La lista suena bien la primera semana, y para el segundo mes ya nadie la recuerda. En más de 35 años acompañando procesos de coaching y terapia, he aprendido que el problema casi nunca es la falta de voluntad — es que empezamos por el lugar equivocado.</p>
 
-        <a class="blog-card" href="blog-retos-30-dias.html">
-          <div class="cover" style="background:linear-gradient(135deg,var(--wheel-2),var(--wheel-5));">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-          </div>
-          <div class="body">
-            <span class="cat">Transformación personal</span>
-            <h3>Por qué un Reto de 30 días sí puede cambiar tu vida</h3>
-            <p>La ciencia detrás de la neuroplasticidad, el momentum y la estructura — y por qué 30 días es el número correcto, ni muy corto ni imposible.</p>
-            <span class="meta">5 min de lectura</span>
-          </div>
-        </a>
+        <h2>Por qué una lista de propósitos no basta</h2>
+        <p>Una lista trata todas las áreas de tu vida como si fueran igual de urgentes. Pero no lo son. Cuando intentas mejorarlo todo al mismo tiempo, terminas invirtiendo energía en frentes que no son realmente el problema, mientras el área que de verdad te está drenando sigue intacta. Por eso, antes de trazar cualquier plan, siempre empiezo con un diagnóstico — no con una meta.</p>
 
-        <div class="blog-card soon">
-          <div class="cover" style="background:linear-gradient(135deg,var(--wheel-4),var(--wheel-6));">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M12 2a7 7 0 0 0-7 7c0 3 2 4.5 2 7h10c0-2.5 2-4 2-7a7 7 0 0 0-7-7z"/><path d="M9 21h6"/></svg>
-          </div>
-          <div class="body">
-            <span class="cat">Salud mental</span>
-            <h3>Ansiedad y estrés: 5 señales de que tu mente pide ayuda</h3>
-            <p>Próximamente.</p>
-            <span class="meta">Muy pronto</span>
-          </div>
+        <div class="pull-quote">No puedes diseñar un plan de vida sobre un diagnóstico que no existe.<span>— R. Chisco</span></div>
+
+        <h2>Qué es la Rueda de la Vida</h2>
+        <p>Es una herramienta simple y muy visual: un círculo dividido en sectores, cada uno representando un área de tu vida. Calificas cada sector del 0 al 10 según qué tan satisfecho estás hoy, y al conectar los puntos aparece una forma — casi nunca es un círculo perfecto. Esa forma irregular es información: te muestra dónde está el desequilibrio que estás sintiendo pero quizás no sabes nombrar.</p>
+        <p>En mi práctica adapté esta rueda a siete áreas que uso también como base de los <a href="retos.html" style="color:var(--moss);text-decoration:underline;">7 Retos de 30 días</a>: felicidad y salud mental, éxito personal y estructura, tu historia de vida, tu mentalidad y creencias, tu capacidad de comunicarte, tu sentido de propósito, y tu resiliencia frente a la adversidad.</p>
+
+        <h2>Cómo la uso en la primera sesión</h2>
+        <p>Cuando alguien llega a consulta por primera vez, no le pregunto qué meta quiere lograr. Le pido que califique estas siete áreas. Casi siempre, la persona llega convencida de que su problema está en un área — y la rueda revela que el verdadero punto de fuga está en otra, muchas veces una que no había considerado. Ese hallazgo, por sí solo, ya cambia la conversación: dejamos de perseguir síntomas y empezamos a trabajar la causa.</p>
+
+        <div class="practice-box">
+          <h3>Hazlo tú mismo, ahora</h3>
+          <ol>
+            <li>Dibuja un círculo y divídelo en 7 partes iguales, una por cada área mencionada arriba.</li>
+            <li>Califica cada una del 0 (vacío) al 10 (pleno), con honestidad, no con el número que "debería" ser.</li>
+            <li>Une los puntos. Mira la forma que se dibuja.</li>
+            <li>Pregúntate: si solo pudiera mejorar un sector este mes, ¿cuál cambiaría todo lo demás?</li>
+          </ol>
         </div>
 
-        <div class="blog-card soon">
-          <div class="cover" style="background:linear-gradient(135deg,var(--wheel-3),var(--wheel-7));">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="4"/></svg>
-          </div>
-          <div class="body">
-            <span class="cat">Logoterapia</span>
-            <h3>Encontrar sentido incluso en la adversidad</h3>
-            <p>Próximamente.</p>
-            <span class="meta">Muy pronto</span>
-          </div>
-        </div>
+        <p>Esa última pregunta es, casi siempre, el verdadero punto de partida. No la lista de diez propósitos — un solo sector, identificado con claridad, trabajado con estructura y acompañamiento durante 30 días.</p>
 
-        <div class="blog-card soon">
-          <div class="cover" style="background:linear-gradient(135deg,var(--wheel-5),var(--wheel-2));">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M12 3a4 4 0 0 1 4 4v4a4 4 0 0 1-8 0V7a4 4 0 0 1 4-4z"/><path d="M19 11a7 7 0 0 1-14 0M12 18v3"/></svg>
-          </div>
-          <div class="body">
-            <span class="cat">Oratoria</span>
-            <h3>Hablar en público sin miedo: la técnica antes que el talento</h3>
-            <p>Próximamente.</p>
-            <span class="meta">Muy pronto</span>
-          </div>
-        </div>
+      </article>
 
-        <div class="blog-card soon">
-          <div class="cover" style="background:linear-gradient(135deg,var(--wheel-6),var(--wheel-1));">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M8 12h8M8 16h5M8 8h8"/><rect x="3" y="4" width="18" height="16" rx="2"/></svg>
-          </div>
-          <div class="body">
-            <span class="cat">Coaching</span>
-            <h3>Coaching vs. terapia: ¿cuál necesitas hoy?</h3>
-            <p>Próximamente.</p>
-            <span class="meta">Muy pronto</span>
-          </div>
+      <div class="author-box">
+        <div class="author-avatar"></div>
+        <div>
+          <h4>René Fernando Chisco Ríos</h4>
+          <p>Psicólogo, Coach Ontológico y conferencista. 35 años acompañando procesos de transformación personal en Dosquebradas, Risaralda.</p>
         </div>
-
       </div>
     </div>
   </section>
 
   <section class="cta-band">
     <div class="wrap">
-      <h2>¿Prefieres hablarlo en persona?</h2>
+      <h2>¿Ya sabes qué área necesita tu atención?</h2>
+      <p>Descubre cuál de los 7 Retos de 30 días es el punto de partida correcto para ti.</p>
       <div class="hero-ctas">
-        <a class="btn btn-solid" style="background:#25D366;color:#fff;" href="https://wa.me/573117472236?text=Hola%20Ren%C3%A9%2C%20quiero%20agendar%20una%20consulta" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        <a class="btn btn-solid" style="background:var(--paper);color:var(--ink);" href="retos.html">Hacer el test de los 7 Retos</a>
+        <a class="btn btn-line" style="color:#fff;border-color:rgba(255,255,255,.4);" href="contacto.html">Reservar una visita</a>
       </div>
     </div>
   </section>
 
+  <section>
+    <div class="wrap">
+      <p class="related-title">Sigue leyendo</p>
+      <div class="related-grid">
+        <a class="related-card" href="blog-retos-30-dias.html">
+          <div class="related-cover" style="background:linear-gradient(135deg,var(--wheel-2),var(--wheel-5));">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </div>
+          <div><h4>Por qué un Reto de 30 días sí puede cambiar tu vida</h4><span>5 min de lectura</span></div>
+        </a>
+        <a class="related-card" href="blog.html">
+          <div class="related-cover" style="background:linear-gradient(135deg,var(--wheel-6),var(--wheel-1));">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M8 12h8M8 16h5M8 8h8"/><rect x="3" y="4" width="18" height="16" rx="2"/></svg>
+          </div>
+          <div><h4>Ver todos los artículos del blog</h4><span>Blog completo</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
@@ -308,18 +245,15 @@
   <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16 2.9C8.8 2.9 2.9 8.8 2.9 16c0 2.5.7 4.9 2 7L3 29l6.2-1.9c2 .1 4 1.7 6.8 1.7 7.2 0 13.1-5.9 13.1-13.1S23.2 2.9 16 2.9zm0 23.8c-2.4 0-4.6-.7-6.5-1.9l-.5-.3-4.6 1.4 1.5-4.4-.3-.5c-1.3-2-2-4.3-2-6.7C3.6 9.2 9.2 3.6 16 3.6S28.4 9.2 28.4 16 22.8 26.7 16 26.7zm7.1-9.2c-.4-.2-2.3-1.1-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.3-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7-.1-.2-.9-2.2-1.3-3-.3-.8-.7-.7-.9-.7h-.8c-.3 0-.7.1-1 .5-.4.4-1.4 1.3-1.4 3.3s1.4 3.8 1.6 4.1c.2.3 2.8 4.3 6.9 6 4.1 1.7 4.1 1.1 4.8 1.1.7 0 2.3-.9 2.6-1.9.3-.9.3-1.7.2-1.9-.1-.2-.4-.3-.8-.5z"/></svg>
 </a>
 
-<!-- JavaScript embebido: toggle del menú móvil -->
 <script>
 (function(){
   var toggle = document.getElementById('navtoggle');
   var nav = document.getElementById('mainnav');
   if(!toggle || !nav) return;
-
   toggle.addEventListener('click', function(){
     var isOpen = nav.classList.toggle('open');
     toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
-
   nav.querySelectorAll('a').forEach(function(link){
     link.addEventListener('click', function(){
       nav.classList.remove('open');
@@ -329,4 +263,4 @@
 })();
 </script>
 </body>
-</html>     
+</html>
