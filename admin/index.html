@@ -8,6 +8,79 @@
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    CMS.init({
+      config: {
+        backend: {
+          name: "github",
+          repo: "Chisco709/Rene-Chisco-Psicologo",
+          branch: "main",
+          base_url: "https://www.renefernandochisco.com",
+          auth_endpoint: "api/auth"
+        },
+        media_folder: "assets/img/uploads",
+        public_folder: "/assets/img/uploads",
+        locale: "es",
+        collections: [
+          {
+            name: "precios",
+            label: "Precios",
+            files: [
+              {
+                label: "Tabla de precios",
+                name: "precios",
+                file: "data/precios.json",
+                fields: [
+                  {
+                    label: "Atención personal",
+                    name: "personal",
+                    widget: "list",
+                    fields: [
+                      { label: "Servicio", name: "nombre", widget: "string" },
+                      { label: "Descripción (opcional)", name: "descripcion", widget: "string", required: false },
+                      { label: "Precio", name: "precio", widget: "string" }
+                    ]
+                  },
+                  {
+                    label: "Empresarial",
+                    name: "empresarial",
+                    widget: "list",
+                    fields: [
+                      { label: "Servicio", name: "nombre", widget: "string" },
+                      { label: "Descripción (opcional)", name: "descripcion", widget: "string", required: false },
+                      { label: "Precio", name: "precio", widget: "string" }
+                    ]
+                  },
+                  { label: "Nota al pie", name: "nota", widget: "text" }
+                ]
+              }
+            ]
+          },
+          {
+            name: "testimonios",
+            label: "Opiniones de pacientes",
+            files: [
+              {
+                label: "Lista de opiniones",
+                name: "testimonios",
+                file: "data/testimonios.json",
+                fields: [
+                  {
+                    label: "Opiniones",
+                    name: "lista",
+                    widget: "list",
+                    fields: [
+                      { label: "Texto de la opinión", name: "texto", widget: "text" },
+                      { label: "Firma", name: "autor", widget: "string", default: "Paciente" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    });
+  </script>
 </body>
 </html>
-        
