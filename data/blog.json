@@ -7,15 +7,15 @@
     },
     "articles": [
       {
-        "id": "rueda-de-la-vida",
-        "url": "blog-rueda-de-la-vida.html",
-        "category": "Coaching",
-        "title": "La Rueda de la Vida: el primer diagnóstico para cualquier cambio real",
-        "excerpt": "Por qué esta herramienta —y no una lista de propósitos— es el mejor punto de partida para saber qué área de tu vida necesita atención hoy.",
-        "readTime": "6 min de lectura",
-        "colorFrom": "wheel-1",
-        "colorTo": "wheel-3",
-        "icon": "wheel",
+        "id": "certeza",
+        "url": "blog-certeza.html",
+        "category": "Transformación personal",
+        "title": "Yo no tenía un sueño, yo tenía una certeza",
+        "excerpt": "La diferencia entre desear algo y saber que va a suceder — y por qué esa certeza cambia cómo actúas, hablas y te perciben los demás.",
+        "readTime": "3 min de lectura",
+        "colorFrom": "wheel-5",
+        "colorTo": "wheel-7",
+        "icon": "target",
         "published": true
       },
       {
