@@ -3,21 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>La Rueda de la Vida: el primer diagnóstico para cualquier cambio real · René Chisco</title>
-<meta name="description" content="Por qué esta herramienta —y no una lista de propósitos— es el mejor punto de partida para saber qué área de tu vida necesita atención hoy.">
-<link rel="canonical" href="https://www.renefernandochisco.com/blog-rueda-de-la-vida.html">
+<title>Blog · René Fernando Chisco Ríos — Psicólogo & Coach</title>
+<meta name="description" content="Artículos sobre coaching, psicología y procesos de cambio real, basados en 35 años de práctica de René Fernando Chisco Ríos.">
+<link rel="canonical" href="https://www.renefernandochisco.com/blog.html">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#1c2b24">
+<meta name="theme-color" content="#081a33">
 <link rel="icon" type="image/jpeg" href="assets/img/imagen-logo.jpg">
-<meta property="og:type" content="article">
+
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="René Fernando Chisco Ríos · Psicólogo">
-<meta property="og:title" content="La Rueda de la Vida: el primer diagnóstico para cualquier cambio real">
-<meta property="og:description" content="Por qué esta herramienta —y no una lista de propósitos— es el mejor punto de partida para saber qué área de tu vida necesita atención hoy.">
-<meta property="og:url" content="https://www.renefernandochisco.com/blog-rueda-de-la-vida.html">
+<meta property="og:title" content="Blog · René Fernando Chisco Ríos — Psicólogo & Coach">
+<meta property="og:description" content="Artículos sobre coaching, psicología y procesos de cambio real, basados en 35 años de práctica.">
+<meta property="og:url" content="https://www.renefernandochisco.com/blog.html">
 <meta property="og:locale" content="es_CO">
+<meta property="og:image" content="https://www.renefernandochisco.com/assets/img/imagen-logo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,450&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- TODO: revisa/ajusta las fechas reales de publicación antes de subir -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Blog de René Fernando Chisco Ríos",
+  "url": "https://www.renefernandochisco.com/blog.html",
+  "author": { "@type": "Person", "name": "René Fernando Chisco Ríos" },
+  "blogPost": [
+    { "@type": "BlogPosting", "headline": "La Rueda de la Vida: el primer diagnóstico para cualquier cambio real", "url": "https://www.renefernandochisco.com/blog-rueda-de-la-vida.html", "datePublished": "2026-08-01" },
+    { "@type": "BlogPosting", "headline": "Por qué un Reto de 30 días sí puede cambiar tu vida", "url": "https://www.renefernandochisco.com/blog-retos-30-dias.html", "datePublished": "2026-07-01" }
+  ]
+}
+</script>
+
 <style>
 :root{
   --ink:#081a33; --paper:#ffffff; --card:#eef6fb;
@@ -26,7 +46,6 @@
   --wheel-1:#044BD9; --wheel-2:#0468BF; --wheel-3:#049DD9; --wheel-4:#04D9C4;
   --wheel-5:#03379e; --wheel-6:#03b6a3; --wheel-7:#1f6fe0;
   --radius: 18px;
-  --cat-from: var(--wheel-1); --cat-to: var(--wheel-3);
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -35,17 +54,18 @@ h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:450;margin:0 0 .4em 0;lette
 a{color:inherit;}
 img{max-width:100%;display:block;}
 .wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+:focus-visible{outline:2px solid var(--moss);outline-offset:3px;border-radius:4px;}
 .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--moss);display:flex;align-items:center;gap:10px;}
 .eyebrow::before{content:"";width:22px;height:1px;background:var(--clay);display:inline-block;}
-section{padding:96px 0;}
-@media(max-width:720px){section{padding:56px 0;}}
+section{padding:88px 0;}
+@media(max-width:720px){section{padding:52px 0;}}
 .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Karla',sans-serif;font-weight:600;font-size:15px;padding:14px 26px;border-radius:100px;text-decoration:none;border:1px solid transparent;transition:transform .2s ease, background .2s ease;}
 .btn-solid{background:var(--ink);color:var(--paper);}
 .btn-solid:hover{transform:translateY(-2px);background:var(--moss-deep);}
 .btn-line{border-color:var(--ink);color:var(--ink);}
 .btn-line:hover{transform:translateY(-2px);background:var(--ink);color:var(--paper);}
 
-header{position:sticky;top:0;z-index:50;background:rgba(242,238,226,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
 header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;}
 .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-size:19px;text-decoration:none;color:var(--ink);}
 .brand-mark{width:34px;height:34px;border-radius:50%;background:conic-gradient(var(--wheel-1) 0 51.4deg,var(--wheel-2) 0 102.8deg,var(--wheel-3) 0 154.2deg,var(--wheel-4) 0 205.6deg,var(--wheel-5) 0 257deg,var(--wheel-6) 0 308.4deg,var(--wheel-7) 0 360deg);flex:none;}
@@ -64,61 +84,75 @@ header .btn{padding:10px 20px;font-size:13.5px;}
   .navtoggle{display:block;}
 }
 
-/* ARTICLE HERO */
-.article-hero{padding:56px 0 0;}
-.breadcrumb{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#5a6a61;margin-bottom:22px;}
-.breadcrumb a{text-decoration:none;border-bottom:1px solid var(--line);}
-.cat-chip{display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--moss-deep);margin-bottom:18px;}
-.cat-chip::before{content:"";width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--cat-from),var(--cat-to));display:inline-block;}
-.article-hero h1{font-size:clamp(32px,5vw,54px);max-width:18ch;margin-bottom:20px;}
-.article-dek{font-size:19px;color:#3a4941;max-width:60ch;margin:0 0 28px;}
-.article-meta{font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8a988e;display:flex;gap:18px;align-items:center;margin-bottom:0;}
-.gradient-rule{height:5px;border-radius:100px;background:linear-gradient(90deg,var(--cat-from),var(--cat-to));margin:36px 0 0;}
+/* BLOG HERO */
+.blog-hero{padding:64px 0 40px;}
+.blog-hero h1{font-size:clamp(34px,5vw,54px);max-width:16ch;margin-bottom:18px;}
+.blog-hero .dek{font-size:18.5px;color:#3a4941;max-width:58ch;margin:0 0 30px;}
+.blog-hero .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+.gradient-rule{height:5px;border-radius:100px;background:linear-gradient(90deg,var(--wheel-1),var(--wheel-3));margin:40px 0 0;}
 
-/* ARTICLE BODY */
-.article-body{max-width:680px;margin:0 auto;padding-top:56px;}
-.article-body p{font-size:18px;line-height:1.85;color:#1f2f27;margin:0 0 26px;}
-.article-body p:first-of-type::first-letter{
-  font-family:'Fraunces',serif;font-size:64px;line-height:.78;float:left;
-  padding:6px 10px 0 0;font-weight:450;color:var(--moss);
+/* FILTERS */
+.filter-row{display:flex;gap:10px;flex-wrap:wrap;}
+.filter-chip{
+  font-family:'IBM Plex Mono',monospace;font-size:12px;padding:9px 18px;border-radius:100px;
+  border:1px solid var(--line);background:var(--paper);color:#4a5850;cursor:pointer;transition:.2s ease;
 }
-.article-body h2{font-size:clamp(24px,3vw,30px);margin:52px 0 20px;}
-.article-body ul{padding-left:22px;margin:0 0 26px;}
-.article-body li{font-size:18px;line-height:1.75;color:#1f2f27;margin-bottom:10px;}
-.pull-quote{
-  margin:44px 0;padding:26px 30px;border-left:3px solid var(--cat-from);
-  background:linear-gradient(180deg,rgba(4,75,217,.05),transparent);
-  font-family:'Fraunces',serif;font-style:italic;font-size:22px;line-height:1.5;color:var(--ink);
+.filter-chip:hover{border-color:var(--moss);color:var(--ink);}
+.filter-chip.active{background:var(--ink);color:#fff;border-color:var(--ink);}
+
+/* FEATURED */
+.section-label{font-size:13px;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.1em;color:#5a6a61;margin-bottom:22px;}
+.featured-post{
+  display:grid;grid-template-columns:.85fr 1.15fr;border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;text-decoration:none;color:var(--ink);transition:.25s ease;background:var(--paper);
 }
-.pull-quote span{display:block;margin-top:10px;font-family:'IBM Plex Mono',monospace;font-style:normal;font-size:11.5px;color:#5a6a61;letter-spacing:.04em;}
+.featured-post:hover{box-shadow:0 18px 44px rgba(4,75,217,.14);transform:translateY(-3px);}
+.featured-cover{background:linear-gradient(135deg,var(--wheel-1),var(--wheel-3));display:flex;align-items:center;justify-content:center;padding:36px;min-height:220px;}
+.featured-cover svg{width:96px;height:96px;}
+.featured-body{padding:38px 40px;display:flex;flex-direction:column;justify-content:center;gap:12px;}
+.featured-body .post-cat{font-size:11px;}
+.featured-body h2{font-size:clamp(21px,2.6vw,27px);margin:0;line-height:1.25;}
+.featured-body p{font-size:15px;color:#5a6a61;margin:0;line-height:1.6;}
+.featured-body .post-meta{margin-top:6px;}
+@media(max-width:760px){.featured-post{grid-template-columns:1fr;} .featured-cover{min-height:150px;padding:26px;} .featured-cover svg{width:64px;height:64px;}}
 
-/* PRACTICE BOX */
-.practice-box{background:var(--card);border-radius:var(--radius);padding:32px 34px;margin:44px 0;}
-.practice-box h3{font-size:19px;margin-bottom:14px;}
-.practice-box ol{margin:0;padding-left:20px;}
-.practice-box li{font-size:16.5px;line-height:1.7;margin-bottom:8px;color:#1f2f27;}
+/* GRID */
+.post-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px;}
+@media(max-width:960px){.post-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:620px){.post-grid{grid-template-columns:1fr;}}
 
-/* AUTHOR + CTA */
-.author-box{max-width:680px;margin:64px auto 0;padding-top:32px;border-top:1px solid var(--line);display:flex;gap:16px;align-items:flex-start;}
-.author-avatar{width:52px;height:52px;border-radius:50%;background:conic-gradient(var(--wheel-1),var(--wheel-2),var(--wheel-3),var(--wheel-4),var(--wheel-5),var(--wheel-6),var(--wheel-7));flex:none;}
-.author-box h4{font-size:16px;margin-bottom:4px;}
-.author-box p{font-size:14.5px;color:#5a6a61;margin:0;}
+.post-card{
+  border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:var(--ink);
+  display:flex;flex-direction:column;transition:.25s ease;background:var(--paper);
+}
+.post-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(4,75,217,.1);border-color:var(--moss);}
+.post-cover{height:110px;display:flex;align-items:center;justify-content:center;flex:none;}
+.post-cover svg{width:34px;height:34px;}
+.post-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:9px;flex:1;}
+.post-cat{font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--moss-deep);}
+.post-card h3{font-size:16.5px;line-height:1.32;margin:0;}
+.post-excerpt{font-size:13.5px;color:#5a6a61;line-height:1.55;margin:0;flex:1;}
+.post-meta{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8a988e;display:flex;align-items:center;gap:8px;margin-top:2px;}
 
+.post-card.pending{cursor:default;border-style:dashed;}
+.post-card.pending:hover{transform:none;box-shadow:none;border-color:var(--line);}
+.post-card.pending .post-cover{opacity:.5;}
+.post-card.pending h3{color:#4a5850;}
+.pending-badge{
+  font-family:'IBM Plex Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.06em;
+  color:#5a6a61;background:var(--card);padding:4px 10px;border-radius:100px;display:inline-flex;width:fit-content;
+}
+.notify-link{
+  font-size:12.5px;font-weight:600;color:var(--moss-deep);text-decoration:none;margin-top:auto;
+  display:inline-flex;align-items:center;gap:6px;padding-top:4px;
+}
+.notify-link:hover{text-decoration:underline;}
+
+/* CTA */
 .cta-band{background:var(--ink);color:#fff;text-align:center;}
 .cta-band h2{color:#fff;font-size:clamp(26px,4vw,38px);max-width:22ch;margin:0 auto 18px;}
 .cta-band p{color:#c4d3c8;max-width:52ch;margin:0 auto 26px;}
 .cta-band .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;}
-
-/* RELATED */
-.related-title{font-size:13px;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.1em;color:#5a6a61;margin-bottom:24px;}
-.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
-@media(max-width:620px){.related-grid{grid-template-columns:1fr;}}
-.related-card{display:flex;gap:16px;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:14px;padding:16px;transition:transform .2s ease, box-shadow .2s ease;}
-.related-card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(4,75,217,.1);}
-.related-cover{width:64px;height:64px;border-radius:10px;flex:none;display:flex;align-items:center;justify-content:center;}
-.related-cover svg{width:24px;height:24px;}
-.related-card h4{font-size:15.5px;margin:0 0 4px;line-height:1.3;}
-.related-card span{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8a988e;}
 
 footer{padding:36px 0;border-top:1px solid var(--line);}
 footer .wrap{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:#5a6a61;flex-wrap:wrap;gap:10px;}
@@ -137,7 +171,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;font-
       <a href="sobre-mi.html">Sobre mí</a>
       <a href="especialidades.html">Especialidades</a>
       <a href="retos.html">Retos de 30 días</a>
-      <a href="blog.html" class="active">Blog</a>
+      <a href="blog.html" class="active" aria-current="page">Blog</a>
       <a href="precios.html">Precios</a>
       <a href="opiniones.html">Opiniones</a>
       <a href="multimedia.html">Multimedia</a>
@@ -149,86 +183,184 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;font-
 </header>
 
 <main>
-  <section class="article-hero">
+  <section class="blog-hero">
     <div class="wrap">
-      <p class="breadcrumb"><a href="index.html">Inicio</a> / <a href="blog.html">Blog</a> / La Rueda de la Vida</p>
-      <span class="cat-chip">Coaching</span>
-      <h1>La Rueda de la Vida: el primer diagnóstico para cualquier cambio real</h1>
-      <p class="article-dek">Por qué esta herramienta —y no una lista de propósitos— es el mejor punto de partida para saber qué área de tu vida necesita atención hoy.</p>
-      <p class="article-meta"><span>René Fernando Chisco Ríos</span><span>·</span><span>6 min de lectura</span></p>
-      <div class="wrap" style="padding:0;"><div class="gradient-rule"></div></div>
-    </div>
-  </section>
-
-  <section style="padding-top:0;">
-    <div class="wrap">
-      <article class="article-body">
-
-        <p>Casi todos empezamos un proceso de cambio de la misma manera: con una lista de propósitos. Bajar de peso, ahorrar más, dedicarle más tiempo a la familia, avanzar en el trabajo. La lista suena bien la primera semana, y para el segundo mes ya nadie la recuerda. En más de 35 años acompañando procesos de coaching y terapia, he aprendido que el problema casi nunca es la falta de voluntad — es que empezamos por el lugar equivocado.</p>
-
-        <h2>Por qué una lista de propósitos no basta</h2>
-        <p>Una lista trata todas las áreas de tu vida como si fueran igual de urgentes. Pero no lo son. Cuando intentas mejorarlo todo al mismo tiempo, terminas invirtiendo energía en frentes que no son realmente el problema, mientras el área que de verdad te está drenando sigue intacta. Por eso, antes de trazar cualquier plan, siempre empiezo con un diagnóstico — no con una meta.</p>
-
-        <div class="pull-quote">No puedes diseñar un plan de vida sobre un diagnóstico que no existe.<span>— R. Chisco</span></div>
-
-        <h2>Qué es la Rueda de la Vida</h2>
-        <p>Es una herramienta simple y muy visual: un círculo dividido en sectores, cada uno representando un área de tu vida. Calificas cada sector del 0 al 10 según qué tan satisfecho estás hoy, y al conectar los puntos aparece una forma — casi nunca es un círculo perfecto. Esa forma irregular es información: te muestra dónde está el desequilibrio que estás sintiendo pero quizás no sabes nombrar.</p>
-        <p>En mi práctica adapté esta rueda a siete áreas que uso también como base de los <a href="retos.html" style="color:var(--moss);text-decoration:underline;">7 Retos de 30 días</a>: felicidad y salud mental, éxito personal y estructura, tu historia de vida, tu mentalidad y creencias, tu capacidad de comunicarte, tu sentido de propósito, y tu resiliencia frente a la adversidad.</p>
-
-        <h2>Cómo la uso en la primera sesión</h2>
-        <p>Cuando alguien llega a consulta por primera vez, no le pregunto qué meta quiere lograr. Le pido que califique estas siete áreas. Casi siempre, la persona llega convencida de que su problema está en un área — y la rueda revela que el verdadero punto de fuga está en otra, muchas veces una que no había considerado. Ese hallazgo, por sí solo, ya cambia la conversación: dejamos de perseguir síntomas y empezamos a trabajar la causa.</p>
-
-        <div class="practice-box">
-          <h3>Hazlo tú mismo, ahora</h3>
-          <ol>
-            <li>Dibuja un círculo y divídelo en 7 partes iguales, una por cada área mencionada arriba.</li>
-            <li>Califica cada una del 0 (vacío) al 10 (pleno), con honestidad, no con el número que "debería" ser.</li>
-            <li>Une los puntos. Mira la forma que se dibuja.</li>
-            <li>Pregúntate: si solo pudiera mejorar un sector este mes, ¿cuál cambiaría todo lo demás?</li>
-          </ol>
-        </div>
-
-        <p>Esa última pregunta es, casi siempre, el verdadero punto de partida. No la lista de diez propósitos — un solo sector, identificado con claridad, trabajado con estructura y acompañamiento durante 30 días.</p>
-
-      </article>
-
-      <div class="author-box">
-        <div class="author-avatar"></div>
-        <div>
-          <h4>René Fernando Chisco Ríos</h4>
-          <p>Psicólogo, Coach Ontológico y conferencista. 35 años acompañando procesos de transformación personal en Dosquebradas, Risaralda.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-band">
-    <div class="wrap">
-      <h2>¿Ya sabes qué área necesita tu atención?</h2>
-      <p>Descubre cuál de los 7 Retos de 30 días es el punto de partida correcto para ti.</p>
+      <p class="eyebrow">Blog</p>
+      <h1>Ideas para tu proceso de cambio</h1>
+      <p class="dek">Artículos breves y directos, basados en 35 años acompañando procesos de coaching y terapia. Los voy publicando poco a poco — si quieres que te avise cuando salga uno nuevo, escríbeme por WhatsApp.</p>
       <div class="hero-ctas">
-        <a class="btn btn-solid" style="background:var(--paper);color:var(--ink);" href="retos.html">Hacer el test de los 7 Retos</a>
-        <a class="btn btn-line" style="color:#fff;border-color:rgba(255,255,255,.4);" href="contacto.html">Reservar una visita</a>
+        <a class="btn btn-solid" href="https://wa.me/573117472236?text=Hola%20Ren%C3%A9%2C%20av%C3%ADsame%20cuando%20publiques%20nuevos%20art%C3%ADculos%20del%20blog" target="_blank" rel="noopener">Avísame de nuevos artículos</a>
+        <a class="btn btn-line" href="retos.html">Ver los 7 Retos de 30 días</a>
+      </div>
+      <div class="gradient-rule"></div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;padding-bottom:0;">
+    <div class="wrap">
+      <div class="filter-row" role="group" aria-label="Filtrar artículos por tema">
+        <button class="filter-chip active" data-filter="todos">Todos</button>
+        <button class="filter-chip" data-filter="coaching">Coaching</button>
+        <button class="filter-chip" data-filter="salud-mental">Salud mental</button>
+        <button class="filter-chip" data-filter="mentalidad">Mentalidad</button>
+        <button class="filter-chip" data-filter="comunicacion">Comunicación</button>
+        <button class="filter-chip" data-filter="resiliencia">Resiliencia</button>
+        <button class="filter-chip" data-filter="proposito">Propósito</button>
+        <button class="filter-chip" data-filter="historia">Historia de vida</button>
+        <button class="filter-chip" data-filter="exito">Éxito personal</button>
       </div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <p class="related-title">Sigue leyendo</p>
-      <div class="related-grid">
-        <a class="related-card" href="blog-retos-30-dias.html">
-          <div class="related-cover" style="background:linear-gradient(135deg,var(--wheel-2),var(--wheel-5));">
+      <p class="section-label">Más reciente</p>
+      <a class="featured-post" href="blog-rueda-de-la-vida.html">
+        <div class="featured-cover">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.3"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l6 3"/><circle cx="12" cy="12" r="1.4" fill="#fff" stroke="none"/></svg>
+        </div>
+        <div class="featured-body">
+          <span class="post-cat">Coaching</span>
+          <h2>La Rueda de la Vida: el primer diagnóstico para cualquier cambio real</h2>
+          <p>Por qué esta herramienta —y no una lista de propósitos— es el mejor punto de partida para saber qué área de tu vida necesita atención hoy.</p>
+          <div class="post-meta"><span>Publicado</span><span>·</span><span>6 min de lectura</span></div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <p class="section-label">Todos los artículos</p>
+      <div class="post-grid">
+
+        <a class="post-card" data-cat="coaching" href="blog-retos-30-dias.html">
+          <div class="post-cover" style="background:linear-gradient(135deg,var(--wheel-2),var(--wheel-5));">
             <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
           </div>
-          <div><h4>Por qué un Reto de 30 días sí puede cambiar tu vida</h4><span>5 min de lectura</span></div>
-        </a>
-        <a class="related-card" href="blog.html">
-          <div class="related-cover" style="background:linear-gradient(135deg,var(--wheel-6),var(--wheel-1));">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M8 12h8M8 16h5M8 8h8"/><rect x="3" y="4" width="18" height="16" rx="2"/></svg>
+          <div class="post-body">
+            <span class="post-cat">Coaching</span>
+            <h3>Por qué un Reto de 30 días sí puede cambiar tu vida</h3>
+            <p class="post-excerpt">La estructura y el acompañamiento constante marcan la diferencia entre un propósito que se abandona y uno que se sostiene.</p>
+            <div class="post-meta"><span>Publicado</span><span>·</span><span>5 min de lectura</span></div>
           </div>
-          <div><h4>Ver todos los artículos del blog</h4><span>Blog completo</span></div>
         </a>
+
+        <div class="post-card pending" data-cat="coaching">
+          <div class="post-cover" style="background:linear-gradient(135deg,var(--wheel-1),var(--wheel-6));">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 01-12 0V3z"/><path d="M6 5H3a3 3 0 003 3M18 5h3a3 3 0 01-3 3"/></svg>
+          </div>
+          <div class="post-body">
+            <span class="post-cat">Coaching</span>
+            <h3>Coaching Ontológico vs. terapia tradicional: en qué se diferencian</h3>
+            <p class="post-excerpt">Dos caminos válidos, con preguntas distintas y momentos distintos para cada uno.</p>
+            <span class="pending-badge">Próximamente</span>
+            <a class="notify-link" href="https://wa.me/573117472236?text=Hola%20Ren%C3%A9%2C%20av%C3%ADsame%20cuando%20publiques%20nuevos%20art%C3%ADculos%20del%20blog" target="_blank" rel="noopener">Avísame cuando salga →</a>
+          </div>
+        </div>
+
+        <div class="post-card pending" data-cat="salud-mental">
+          <div class="post-cover" style="background:linear-gradient(135deg,var(--wheel-3),var(--wheel-4));">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M12 21s-7-4.35-9.5-8.5C.8 8.7 2.5 5 6 5c2 0 3.3 1.1 4 2.2C10.7 6.1 12 5 14 5c3.5 0 5.2 3.7 3.5 7.5C15 16.65 12 21 12 21z"/></svg>
+          </div>
+          <div class="post-body">
+            <span class="post-cat">Salud mental</span>
+            <h3>Qué esperar en tu primera sesión de terapia</h3>
+            <p class="post-excerpt">Para que llegar a consulta por primera vez no se sienta como un salto al vacío.</p>
+            <span class="pending-badge">Próximamente</span>
+            <a class="notify-link" href="https://wa.me/573117472236?text=Hola%20Ren%C3%A9%2C%20av%C3%ADsame%20cuando%20publiques%20nuevos%20art%C3%ADculos%20del%20blog" target="_blank" rel="noopener">Avísame cuando salga →</a>
+          </div>
+        </div>
+
+        <div class="post-card pending" data-cat="comunicacion">
+          <div class="post-cover" style="background:linear-gradient(135deg,var(--wheel-6),var(--wheel-1));">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+          </div>
+          <div class="post-body">
+            <span class="post-cat">Comunicación</span>
+            <h3>Comunicación asertiva: decir lo que sientes sin romper la relación</h3>
+            <p class="post-excerpt">Un punto medio entre callar por miedo y explotar por acumulación.</p>
+            <span class="pending-badge">Próximamente</span>
+            <a class="notify-link" href="https://wa.me/573117472236?text=Hola%20Ren%C3%A9%2C%20av%C3%ADsame%20cuando%20publiques%20nuevos%20art%C3%ADculos%20del%20blog" target="_blank" rel="noopener">Avísame cuando salga →</a>
+          </div>
+        </div>
+
+        <div class="post-card pending" data-cat="mentalidad">
+          <div class="post-cover" style="background:linear-gradient(135deg,var(--wheel-2),var(--wheel-5));">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.7 10.7c.5.4.7 1 .7 1.6V16h6v-.7c0-.6.2-1.2.7-1.6A6 6 0 0012 3z"/></svg>
+          </div>
+          <div class="post-body">
+            <span class="post-cat">Mentalidad</span>
+            <h3>Las creencias limitantes que te sabotean sin que lo notes</h3>
+            <p class="post-excerpt">Muchas veces el freno no es la situación externa, sino una idea instalada hace años.</p>
+            <span class="pending-badge">Próximamente</span>
+            <a class="notify-link" href="https://wa.me/573117472236?text=Hola%20Ren%C3%A9%2C%20av%C3%ADsame%20cuando%20publiques%20nuevos%20art%C3%ADculos%20del%20blog" target="_blank" rel="noopener">Avísame cuando salga →</a>
+          </div>
+        </div>
+
+        <div class="post-card pending" data-cat="resiliencia">
+          <div class="post-cover" style="background:linear-gradient(135deg,var(--wheel-5),var(--wheel-7));">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M2 20l6-11 4 6 3-5 7 10z"/></svg>
+          </div>
+          <div class="post-body">
+            <span class="post-cat">Resiliencia</span>
+            <h3>Resiliencia: no es no caerse, es cómo te levantas</h3>
+            <p class="post-excerpt">Nadie atraviesa una crisis sin tambalear. La diferencia está en lo que haces después.</p>
+            <span class="pending-badge">Próximamente</span>
+            <a class="notify-link" href="https://wa.me/573117472236?text=Hola%20Ren%C3%A9%2C%20av%C3%ADsame%20cuando%20publiques%20nuevos%20art%C3%ADculos%20del%20blog" target="_blank" rel="noopener">Avísame cuando salga →</a>
+          </div>
+        </div>
+
+        <div class="post-card pending" data-cat="proposito">
+          <div class="post-cover" style="background:linear-gradient(135deg,var(--wheel-4),var(--wheel-6));">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 8l2 3-2 5-2-5 2-3z"/></svg>
+          </div>
+          <div class="post-body">
+            <span class="post-cat">Propósito</span>
+            <h3>Encontrar tu propósito, sin importar en qué etapa de la vida estés</h3>
+            <p class="post-excerpt">No es una revelación única — es una pregunta que se afina con el tiempo.</p>
+            <span class="pending-badge">Próximamente</span>
+            <a class="notify-link" href="https://wa.me/573117472236?text=Hola%20Ren%C3%A9%2C%20av%C3%ADsame%20cuando%20publiques%20nuevos%20art%C3%ADculos%20del%20blog" target="_blank" rel="noopener">Avísame cuando salga →</a>
+          </div>
+        </div>
+
+        <div class="post-card pending" data-cat="historia">
+          <div class="post-cover" style="background:linear-gradient(135deg,var(--wheel-7),var(--wheel-2));">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+          </div>
+          <div class="post-body">
+            <span class="post-cat">Historia de vida</span>
+            <h3>Reescribir tu historia: por qué el pasado no tiene que definir tu futuro</h3>
+            <p class="post-excerpt">Contamos nuestra historia de una forma. Existen otras igual de ciertas — y más útiles.</p>
+            <span class="pending-badge">Próximamente</span>
+            <a class="notify-link" href="https://wa.me/573117472236?text=Hola%20Ren%C3%A9%2C%20av%C3%ADsame%20cuando%20publiques%20nuevos%20art%C3%ADculos%20del%20blog" target="_blank" rel="noopener">Avísame cuando salga →</a>
+          </div>
+        </div>
+
+        <div class="post-card pending" data-cat="exito">
+          <div class="post-cover" style="background:linear-gradient(135deg,var(--wheel-1),var(--wheel-4));">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M3 21h18M6 21V10M12 21V4M18 21v14"/></svg>
+          </div>
+          <div class="post-body">
+            <span class="post-cat">Éxito personal</span>
+            <h3>Estructura y disciplina: el puente entre la meta y el resultado</h3>
+            <p class="post-excerpt">La motivación abre la puerta. La estructura es lo que te sostiene cuando la motivación se va.</p>
+            <span class="pending-badge">Próximamente</span>
+            <a class="notify-link" href="https://wa.me/573117472236?text=Hola%20Ren%C3%A9%2C%20av%C3%ADsame%20cuando%20publiques%20nuevos%20art%C3%ADculos%20del%20blog" target="_blank" rel="noopener">Avísame cuando salga →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <h2>¿Prefieres hablarlo directamente?</h2>
+      <p>Mientras el blog va creciendo, puedes agendar una sesión o escribirme por WhatsApp.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-solid" style="background:var(--paper);color:var(--ink);" href="contacto.html">Reservar una visita</a>
+        <a class="btn btn-line" style="color:#fff;border-color:rgba(255,255,255,.4);" href="retos.html">Ver los 7 Retos de 30 días</a>
       </div>
     </div>
   </section>
@@ -249,15 +381,33 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;font-
 (function(){
   var toggle = document.getElementById('navtoggle');
   var nav = document.getElementById('mainnav');
-  if(!toggle || !nav) return;
-  toggle.addEventListener('click', function(){
-    var isOpen = nav.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
-  nav.querySelectorAll('a').forEach(function(link){
-    link.addEventListener('click', function(){
-      nav.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
+  if(toggle && nav){
+    toggle.addEventListener('click', function(){
+      var isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click', function(){
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+})();
+
+/* Filtro de artículos por categoría */
+(function(){
+  var chips = document.querySelectorAll('.filter-chip');
+  var cards = document.querySelectorAll('.post-grid [data-cat]');
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      chips.forEach(function(c){ c.classList.remove('active'); });
+      this.classList.add('active');
+      var f = this.getAttribute('data-filter');
+      cards.forEach(function(card){
+        var show = f === 'todos' || card.getAttribute('data-cat') === f;
+        card.style.display = show ? '' : 'none';
+      });
     });
   });
 })();
