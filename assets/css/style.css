@@ -19,14 +19,86 @@
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Karla',sans-serif;
-    font-size:16px;
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-  }
+  margin:0;
+  color:var(--ink);
+  font-family:'Karla',sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+
+  /* Fondo que comienza oscuro y se vuelve claro al bajar */
+  background:
+    linear-gradient(
+      180deg,
+      #071526 0px,
+      #0b1d33 520px,
+      #12304d 850px,
+      #dceaf3 1250px,
+      #eef6fb 1750px,
+      #ffffff 2400px
+    );
+
+  background-attachment:scroll;
+}
+/* =========================================
+   FONDO OSCURO MODERNO EN LA PARTE SUPERIOR
+   ========================================= */
+
+.hero{
+  position:relative;
+  color:#ffffff;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(
+      circle at 75% 30%,
+      rgba(4,157,217,.18),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(4,75,217,.16),
+      transparent 28%
+    );
+  pointer-events:none;
+}
+
+.hero .wrap{
+  position:relative;
+  z-index:1;
+}
+
+.hero .eyebrow{
+  color:#79cfff;
+}
+
+.hero .hero-stats{
+  border-top-color:rgba(255,255,255,.18);
+}
+
+.hero .hero-stats div b{
+  color:#ffffff;
+}
+
+.hero .hero-stats div span{
+  color:#b8cad8;
+}
+
+.hero p.lead{
+  color:#d6e2eb;
+}
+
+.hero h1{
+  color:#ffffff;
+}
+
+.hero h1 em{
+  color:#04D9C4;
+}
   h1,h2,h3,h4{
     font-family:'Fraunces',serif;
     font-weight:450;
@@ -63,11 +135,60 @@
 
   /* HEADER */
   header{
-    position:sticky;top:0;z-index:50;
-    background:rgba(242,238,226,.86);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:50;
+
+  background:rgba(7,21,38,.82);
+  backdrop-filter:blur(16px);
+
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.brand{
+  color:#ffffff;
+}
+
+nav.mainnav a{
+  color:#d7e3ec;
+  opacity:.8;
+}
+
+nav.mainnav a:hover,
+nav.mainnav a.active{
+  color:#ffffff;
+  opacity:1;
+}
+
+.navtoggle{
+  color:#ffffff;
+}
+@media(max-width:880px){
+
+  nav.mainnav{
+    background:#0b1d33;
+    border-bottom:1px solid rgba(255,255,255,.08);
   }
+
+  nav.mainnav a{
+    color:#d7e3ec;
+    border-top:1px solid rgba(255,255,255,.08);
+  }
+
+}
+/* Secciones claras después de la portada */
+
+#sobre-mi{
+  background:rgba(238,246,251,.92) !important;
+}
+
+#especialidades{
+  background:rgba(255,255,255,.96);
+}
+
+#opiniones{
+  background:rgba(238,246,251,.94) !important;
+}
   header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;}
   .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-size:19px;text-decoration:none;color:var(--ink);}
   .brand-mark{
