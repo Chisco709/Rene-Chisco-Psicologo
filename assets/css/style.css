@@ -25,28 +25,19 @@
   font-size:16px;
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
-
-  /* Fondo que comienza oscuro y se vuelve claro al bajar */
-  background:
-    linear-gradient(
-      180deg,
-      #071526 0px,
-      #0b1d33 520px,
-      #12304d 850px,
-      #dceaf3 1250px,
-      #eef6fb 1750px,
-      #ffffff 2400px
-    );
-
-  background-attachment:scroll;
+  background:var(--paper);
 }
 /* =========================================
-   FONDO OSCURO MODERNO EN LA PARTE SUPERIOR
+   FONDO OSCURO MODERNO — SOLO EN EL HERO
+   (contenido dentro de la sección, ya no en
+   todo el body, para no afectar el resto de
+   secciones ni las demás páginas del sitio)
    ========================================= */
 
 .hero{
   position:relative;
   color:#ffffff;
+  background:linear-gradient(180deg, #071526 0%, #0b1d33 45%, #12304d 100%);
 }
 
 .hero::before{
@@ -146,7 +137,7 @@
 }
 
 .brand{
-  color:#ffffff;
+  color:#ffffff !important;
 }
 
 nav.mainnav a{
@@ -161,33 +152,20 @@ nav.mainnav a.active{
 }
 
 .navtoggle{
-  color:#ffffff;
+  color:#ffffff !important;
 }
 @media(max-width:880px){
 
   nav.mainnav{
-    background:#0b1d33;
+    background:#0b1d33 !important;
     border-bottom:1px solid rgba(255,255,255,.08);
   }
 
   nav.mainnav a{
-    color:#d7e3ec;
+    color:#d7e3ec !important;
     border-top:1px solid rgba(255,255,255,.08);
   }
 
-}
-/* Secciones claras después de la portada */
-
-#sobre-mi{
-  background:rgba(238,246,251,.92) !important;
-}
-
-#especialidades{
-  background:rgba(255,255,255,.96);
-}
-
-#opiniones{
-  background:rgba(238,246,251,.94) !important;
 }
   header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;}
   .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-size:19px;text-decoration:none;color:var(--ink);}
@@ -232,13 +210,14 @@ nav.mainnav a.active{
   }
   .wheel-center b{font-family:'Fraunces',serif;font-size:13px;line-height:1.15;color:var(--ink);}
   .wheel-center span{font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:var(--moss);margin-top:4px;letter-spacing:.04em;}
-  .wheel-caption{font-size:13px;color:#5a6a61;text-align:center;max-width:280px;margin-top:18px;}
+  .wheel-caption{font-size:13px;color:#f4fdf8;text-align:center;max-width:280px;margin-top:18px;}
   .wheel-labels{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
   .wheel-labels li{
     font-family:'IBM Plex Mono',monospace;font-size:10.5px;padding:5px 10px;border-radius:100px;
-    border:1px solid var(--line);cursor:pointer;transition:.2s ease;color:#4a5850;
+    border:1px solid rgba(255,255,255,.22);cursor:pointer;transition:.2s ease;color:#d7e3ec;
+    background:rgba(255,255,255,.06);
   }
-  .wheel-labels li:hover,.wheel-labels li.active{border-color:var(--ink);color:var(--ink);background:var(--card);}
+  .wheel-labels li:hover,.wheel-labels li.active{border-color:#04D9C4;color:#ffffff;background:rgba(4,217,196,.18);}
 
   /* SOBRE MI */
   .about-grid{display:grid;grid-template-columns:.9fr 1.4fr;gap:56px;align-items:start;}
